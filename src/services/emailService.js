@@ -31,7 +31,10 @@ import { generateResendCreateUserEmailHTML } from "../templates/email/resendCrea
 
 const GMAIL_USER = process.env.GMAIL_USER;
 const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
-const FRONTEND_URL = process.env.FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app";
+const FRONTEND_URL = process.env.FRONTEND_URL || 
+  (process.env.NODE_ENV === "development" 
+    ? "http://localhost:3000" 
+    : "https://asb-ai-fitness-helper.vercel.app");
 const APP_NAME = process.env.APP_NAME || "AI Fitness Form Helper";
 const FROM_EMAIL = process.env.FROM_EMAIL || GMAIL_USER;
 const FROM_NAME = process.env.FROM_NAME || APP_NAME;

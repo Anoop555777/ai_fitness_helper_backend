@@ -1,0 +1,415 @@
+[
+  {
+    "name": "Squat",
+    "path": "temp-gifs/squat.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif"
+  },
+  {
+    "name": "Front Squat",
+    "path": "temp-gifs/front-squat.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif"
+  },
+  {
+    "name": "Back Squat",
+    "path": "temp-gifs/back-squat.gif",
+    "status": "exists"
+  },
+  {
+    "name": "Push-up",
+    "path": "temp-gifs/push-up.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/CCq1_EmXpzoAAAAC/pushup-exercise.gif"
+  },
+  {
+    "name": "Deadlift",
+    "path": "temp-gifs/deadlift.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/NgtmNzYYAzYAAAAC/deadlift-james-smith.gif"
+  },
+  {
+    "name": "Plank",
+    "path": "temp-gifs/plank.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/FMpev4Dz3RMAAAAC/plank-to-squat-exercise.gif"
+  },
+  {
+    "name": "Lunge",
+    "path": "temp-gifs/lunge.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/_xuHbTRKSlgAAAAC/lunges-sheamus.gif"
+  },
+  {
+    "name": "Bench Press",
+    "path": "temp-gifs/bench-press.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/aDKEuBym_I8AAAAC/gym-exercise.gif"
+  },
+  {
+    "name": "Pull-up",
+    "path": "temp-gifs/pull-up.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/Lq4uADWXzpUAAAAC/pull-ups-working-out.gif"
+  },
+  {
+    "name": "Overhead Press",
+    "path": "temp-gifs/overhead-press.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/sJ1xs4-DxfAAAAAC/landmine-press-stephen-farrelly.gif"
+  },
+  {
+    "name": "Romanian Deadlift",
+    "path": "temp-gifs/romanian-deadlift.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/9-bFBCBJhCAAAAAC/deadlift-michalisbon.gif"
+  },
+  {
+    "name": "Dumbbell Row",
+    "path": "temp-gifs/dumbbell-row.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/kup6KNAh1-oAAAAC/work-out-naomi-campbell.gif"
+  },
+  {
+    "name": "Burpee",
+    "path": "temp-gifs/burpee.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/uAtJlrhNoWQAAAAC/burpees-stephen-farrelly.gif"
+  },
+  {
+    "name": "Mountain Climber",
+    "path": "temp-gifs/mountain-climber.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/JByBVZCIFdsAAAAC/mountain-climbers.gif"
+  },
+  {
+    "name": "Jumping Jacks",
+    "path": "temp-gifs/jumping-jacks.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif"
+  },
+  {
+    "name": "Bicep Curl",
+    "path": "temp-gifs/bicep-curl.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/JOkZmNENGU0AAAAC/bicep-curl-biceps.gif"
+  },
+  {
+    "name": "Tricep Dip",
+    "path": "temp-gifs/tricep-dip.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/Aq6euho3C5wAAAAC/dip-workout.gif"
+  },
+  {
+    "name": "Leg Press",
+    "path": "temp-gifs/leg-press.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/FoIEqZY1mSgAAAAC/leg-press-workout.gif"
+  },
+  {
+    "name": "Calf Raise",
+    "path": "temp-gifs/calf-raise.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/TBOR9mdMct4AAAAC/leg-raises-crunches.gif"
+  },
+  {
+    "name": "Russian Twist",
+    "path": "temp-gifs/russian-twist.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/qdZ6NKCGBZIAAAAC/happy-fit-challenge-workout.gif"
+  },
+  {
+    "name": "Hip Thrust",
+    "path": "temp-gifs/hip-thrust.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/qbQSyAyD1I4AAAAC/mirae-mirae-junhyuk.gif"
+  },
+  {
+    "name": "Side Plank",
+    "path": "temp-gifs/side-plank.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/ohdQMV-9SrkAAAAC/pamela-pamela-reif.gif"
+  },
+  {
+    "name": "Box Jump",
+    "path": "temp-gifs/box-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif"
+  },
+  {
+    "name": "Wall Sit",
+    "path": "temp-gifs/wall-sit.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/LZhJGXEfnhIAAAAC/borna-coric-leg-lifts.gif"
+  },
+  {
+    "name": "Hollow Hold",
+    "path": "temp-gifs/hollow-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/MPGfMU7LAigAAAAC/home-workouts-exercise.gif"
+  },
+  {
+    "name": "Dead Bug Hold",
+    "path": "temp-gifs/dead-bug-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/o1OfcM6fxO4AAAAC/workout-working-out.gif"
+  },
+  {
+    "name": "Reverse Plank",
+    "path": "temp-gifs/reverse-plank.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/ohdQMV-9SrkAAAAC/pamela-pamela-reif.gif"
+  },
+  {
+    "name": "Superman Hold",
+    "path": "temp-gifs/superman-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/kkW0wQNQkh0AAAAC/superman.gif"
+  },
+  {
+    "name": "Glute Bridge Hold",
+    "path": "temp-gifs/glute-bridge-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/KWB1fvFlzjgAAAAC/barbell-glute.gif"
+  },
+  {
+    "name": "Single Leg Glute Bridge Hold",
+    "path": "temp-gifs/single-leg-glute-bridge-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/6e9R6ktpmjQAAAAC/single-leg-butt-bridge.gif"
+  },
+  {
+    "name": "L-Sit Hold",
+    "path": "temp-gifs/l-sit-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/3dNF8-AkEMsAAAAC/working-my-abs-exercise.gif"
+  },
+  {
+    "name": "Wall Handstand Hold",
+    "path": "temp-gifs/wall-handstand-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/V849xTRau1cAAAAC/hand-stand-balance.gif"
+  },
+  {
+    "name": "Farmer's Walk",
+    "path": "temp-gifs/farmers-walk.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/MPGfMU7LAigAAAAC/home-workouts-exercise.gif"
+  },
+  {
+    "name": "Forearm Plank",
+    "path": "temp-gifs/forearm-plank.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/73Sld1d9MbkAAAAC/plank-workout.gif"
+  },
+  {
+    "name": "High Plank Hold",
+    "path": "temp-gifs/high-plank-hold.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/FMpev4Dz3RMAAAAC/plank-to-squat-exercise.gif"
+  },
+  {
+    "name": "Jump Squat",
+    "path": "temp-gifs/jump-squat.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif"
+  },
+  {
+    "name": "Broad Jump",
+    "path": "temp-gifs/broad-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/73NJk5DQjGwAAAAC/exercise-fitness.gif"
+  },
+  {
+    "name": "Tuck Jump",
+    "path": "temp-gifs/tuck-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif"
+  },
+  {
+    "name": "Single Leg Hop",
+    "path": "temp-gifs/single-leg-hop.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/rZ5I5KophgwAAAAC/exercise-workout.gif"
+  },
+  {
+    "name": "Lateral Bound",
+    "path": "temp-gifs/lateral-bound.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/wEitxLHgDYMAAAAC/workout-working-out.gif"
+  },
+  {
+    "name": "Depth Jump",
+    "path": "temp-gifs/depth-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/5-hwzJ8VL2EAAAAC/jump-rope-sheamus.gif"
+  },
+  {
+    "name": "Plyometric Push-up",
+    "path": "temp-gifs/plyometric-push-up.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/5c3eLTAGPF8AAAAC/push-ups-rakul-preet.gif"
+  },
+  {
+    "name": "Skater Jump",
+    "path": "temp-gifs/skater-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif"
+  },
+  {
+    "name": "Split Jump",
+    "path": "temp-gifs/split-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif"
+  },
+  {
+    "name": "Clapping Push-up",
+    "path": "temp-gifs/clapping-push-up.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/EbRmSXrs5JQAAAAC/clap-pushups-stephen-farrelly.gif"
+  },
+  {
+    "name": "Single Leg Box Jump",
+    "path": "temp-gifs/single-leg-box-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/5-hwzJ8VL2EAAAAC/jump-rope-sheamus.gif"
+  },
+  {
+    "name": "Ankle Hops",
+    "path": "temp-gifs/ankle-hops.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif"
+  },
+  {
+    "name": "Star Jump",
+    "path": "temp-gifs/star-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/LQ66sZzkA68AAAAC/jumping-jacks-exercise.gif"
+  },
+  {
+    "name": "Pike Jump",
+    "path": "temp-gifs/pike-jump.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif"
+  },
+  {
+    "name": "Hang Clean",
+    "path": "temp-gifs/hang-clean.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/K6mJpEVYP3MAAAAC/full-body-exercise-yoga.gif"
+  },
+  {
+    "name": "Power Clean",
+    "path": "temp-gifs/power-clean.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/DxkolW-N_pYAAAAC/workout-dumpel.gif"
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "path": "temp-gifs/dumbbell-shoulder-press.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/T_vqvD5qG-YAAAAC/shoulder-press-seated-shoulder-press.gif"
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "path": "temp-gifs/dumbbell-bench-press.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/Tb1J2ykmJlkAAAAC/chestday-chestworkout.gif"
+  },
+  {
+    "name": "Dumbbell Squat",
+    "path": "temp-gifs/dumbbell-squat.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/5z4q0v91sNYAAAAC/squats-exercise.gif"
+  },
+  {
+    "name": "Dumbbell Lunge",
+    "path": "temp-gifs/dumbbell-lunge.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/KOkn9T5BiooAAAAC/curtsylunge-lunge.gif"
+  },
+  {
+    "name": "Dumbbell Romanian Deadlift",
+    "path": "temp-gifs/dumbbell-romanian-deadlift.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/VSY6K8y4zEIAAAAC/romanian-deadlift-exercise.gif"
+  },
+  {
+    "name": "Dumbbell Fly",
+    "path": "temp-gifs/dumbbell-fly.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/ClpO4TlEYhQAAAAC/pulling-upasana-kamineni-konidela.gif"
+  },
+  {
+    "name": "Dumbbell Lateral Raise",
+    "path": "temp-gifs/dumbbell-lateral-raise.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/cy46UbnfUrkAAAAC/eleva%C3%A7%C3%A3o-lateral-hateres.gif"
+  },
+  {
+    "name": "Dumbbell Front Raise",
+    "path": "temp-gifs/dumbbell-front-raise.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/vFLnrUUJtRQAAAAC/dumbells-front-raise.gif"
+  },
+  {
+    "name": "Dumbbell Tricep Extension",
+    "path": "temp-gifs/dumbbell-tricep-extension.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/V3J-mg9gH0kAAAAC/seated-dumbbell-triceps-extension.gif"
+  },
+  {
+    "name": "Dumbbell Hammer Curl",
+    "path": "temp-gifs/dumbbell-hammer-curl.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/bD-xqk220MMAAAAC/miodek.gif"
+  },
+  {
+    "name": "Dumbbell Goblet Squat",
+    "path": "temp-gifs/dumbbell-goblet-squat.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/NH_OirQp6OsAAAAC/squats-sheamus.gif"
+  },
+  {
+    "name": "Dumbbell Step-up",
+    "path": "temp-gifs/dumbbell-step-up.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/W3zfuHShZlgAAAAC/stair-master-exercise.gif"
+  },
+  {
+    "name": "Dumbbell Pullover",
+    "path": "temp-gifs/dumbbell-pullover.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/TPJawIY5nMoAAAAC/db-pullover-dumbbell-workout.gif"
+  },
+  {
+    "name": "Dumbbell Shrug",
+    "path": "temp-gifs/dumbbell-shrug.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/ZFGhZdaLtcQAAAAC/exercise-karna-sevengers.gif"
+  },
+  {
+    "name": "Dumbbell Reverse Fly",
+    "path": "temp-gifs/dumbbell-reverse-fly.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/HTvjufujuJAAAAAC/rear-raise-rear.gif"
+  },
+  {
+    "name": "Dumbbell Calf Raise",
+    "path": "temp-gifs/dumbbell-calf-raise.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/TBOR9mdMct4AAAAC/leg-raises-crunches.gif"
+  },
+  {
+    "name": "Dumbbell Overhead Tricep Extension",
+    "path": "temp-gifs/dumbbell-overhead-tricep-extension.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/V3J-mg9gH0kAAAAC/seated-dumbbell-triceps-extension.gif"
+  },
+  {
+    "name": "Dumbbell Arnold Press",
+    "path": "temp-gifs/dumbbell-arnold-press.gif",
+    "status": "downloaded",
+    "source": "https://media.tenor.com/sJ1xs4-DxfAAAAAC/landmine-press-stephen-farrelly.gif"
+  }
+]

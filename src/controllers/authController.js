@@ -106,9 +106,11 @@ const createSendToken = (
   res.cookie("token", token, {
     httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
     secure: process.env.NODE_ENV === "production", // HTTPS only in production
-    sameSite: "lax", // Allows cookies on top-level navigations (browser reopen) while still preventing CSRF
+    sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax", // Strict in production for better CSRF protection
     maxAge: cookieMaxAge, // Cookie expiration matches token expiration
     path: "/", // Available for all routes
+    // Additional security: domain should be set if using subdomains
+    // domain: process.env.COOKIE_DOMAIN, // Optional: restrict to specific domain
   });
 
   // Send response without token in body (cookie handles it)
@@ -881,7 +883,10 @@ export const resetPassword = catchAsync(async (req, res, next) => {
  */
 export const verifyToken = catchAsync(async (req, res, next) => {
   const { token } = req.params;
-  const FRONTEND_URL = process.env.FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app";
+  const FRONTEND_URL = process.env.FRONTEND_URL || 
+    (process.env.NODE_ENV === "development" 
+      ? "http://localhost:3000" 
+      : "https://asb-ai-fitness-helper.vercel.app");
   const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8000";
 
   // Check if token is missing or empty
@@ -1260,13 +1265,13 @@ export const googleCallback = catchAsync(async (req, res, next) => {
     // Calculate cookie expiration in milliseconds
     const cookieMaxAge = parseExpirationToMs(JWT_EXPIRATION.ACCESS_TOKEN);
 
-    // Set JWT token as HttpOnly cookie
+    // Set JWT token as HttpOnly cookie (best practice for security)
     res.cookie("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax", // Allows cookies on top-level navigations (browser reopen) while still preventing CSRF
-      maxAge: cookieMaxAge,
-      path: "/",
+      httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
+      secure: process.env.NODE_ENV === "production", // HTTPS only in production
+      sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax", // Strict in production for better CSRF protection
+      maxAge: cookieMaxAge, // Cookie expiration matches token expiration
+      path: "/", // Available for all routes
     });
 
     // Redirect to frontend (token is in cookie)

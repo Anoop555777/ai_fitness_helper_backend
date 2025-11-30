@@ -14,10 +14,32 @@ import mountRoutes from "./routes/index.js";
 // Import middleware
 import globalErrorHandler from "./middleware/errorHandler.js";
 import { rateLimiter } from "./middleware/rateLimiter.js";
+import { sanitizeRequest } from "./middleware/sanitization.js";
+import {
+  requestId,
+  validateIp,
+  securityHeaders,
+  preventParameterPollution,
+  validateRequestSize,
+  validateHttpMethod,
+  securityLogging,
+} from "./middleware/security.js";
 
 const app = express();
 
-// Security middleware (only in production to avoid dev tool conflicts)
+// ============================================
+// SECURITY MIDDLEWARE - Applied in order
+// ============================================
+
+// 1. Request ID - Must be first for tracing
+app.use(requestId);
+
+// 2. Trust proxy - Important for accurate IP detection behind proxies/load balancers
+app.set("trust proxy", 1);
+
+// 3. Security Headers - Helmet for comprehensive security headers
+// In production: Full CSP and security headers
+// In development: Basic security headers (XSS protection enabled by default)
 if (process.env.NODE_ENV === "production") {
   app.use(
     helmet({
@@ -27,33 +49,78 @@ if (process.env.NODE_ENV === "production") {
           styleSrc: ["'self'", "'unsafe-inline'"], // Allow inline styles for Tailwind
           scriptSrc: ["'self'"],
           imgSrc: ["'self'", "data:", "https:"], // Allow images from any HTTPS source
-          connectSrc: ["'self'", process.env.FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"],
+          connectSrc: [
+            "'self'",
+            process.env.FRONTEND_URL ||
+              (process.env.NODE_ENV === "development"
+                ? "http://localhost:3000"
+                : "https://asb-ai-fitness-helper.vercel.app"),
+          ],
         },
       },
       crossOriginEmbedderPolicy: false, // Disable for better compatibility
+      hsts: {
+        maxAge: 31536000, // 1 year
+        includeSubDomains: true,
+        preload: true,
+      },
+    })
+  );
+} else {
+  // In development, use basic helmet config (XSS protection enabled by default)
+  app.use(
+    helmet({
+      contentSecurityPolicy: false, // Disable CSP in dev to avoid conflicts with dev tools
+      crossOriginEmbedderPolicy: false,
     })
   );
 }
 
-// CORS configuration
+// 4. Additional security headers (complement Helmet)
+app.use(securityHeaders);
+
+// 5. IP validation and logging
+app.use(validateIp);
+
+// 6. CORS configuration
 // In development, allow all origins for mobile testing
 // In production, use specific frontend URL
 const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
       ? process.env.FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"
-      : true, // Allow all origins in development for mobile access
+      : process.env.FRONTEND_URL || "http://localhost:3000", // Use localhost:3000 in development
   credentials: true,
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Request-ID"],
+  exposedHeaders: ["X-Request-ID"],
+  maxAge: 86400, // 24 hours
 };
 
 app.use(cors(corsOptions));
 
-// Cookie parser middleware (must be before body parsing)
+// 7. Cookie parser middleware (must be before body parsing)
 app.use(cookieParser());
 
-// Body parsing middleware
+// 8. Body parsing middleware with size limits
 app.use(express.json({ limit: "10mb" })); // Increased limit for video/pose data
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
+
+// 9. Request size validation (additional check)
+app.use(validateRequestSize);
+
+// 10. HTTP method validation
+app.use(validateHttpMethod);
+
+// 11. Parameter pollution protection
+app.use(preventParameterPollution);
+
+// 12. Security: MongoDB sanitization and XSS protection
+// Must be after body parsing to sanitize parsed data
+app.use(sanitizeRequest);
+
+// 13. Security logging (after sanitization to log clean data)
+app.use(securityLogging);
 
 // Logging middleware
 if (process.env.NODE_ENV === "development") {
@@ -63,9 +130,10 @@ if (process.env.NODE_ENV === "development") {
   app.use(morgan("combined"));
 }
 
-// Rate limiting - Enable in production
+// 14. Rate limiting - Enable in production
+// Note: Rate limiting should be applied early but after security middleware
 if (process.env.NODE_ENV === "production") {
-  app.use('/api/', rateLimiter);
+  app.use("/api/", rateLimiter);
 }
 
 // Health check endpoint

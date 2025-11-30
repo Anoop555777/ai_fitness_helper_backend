@@ -186,6 +186,16 @@ export const logAuth = (event, userId, meta = {}) => {
 };
 
 /**
+ * Log security event
+ * @param {string} event - Security event type (e.g., 'auth_attempt', 'suspicious_activity')
+ * @param {Object} meta - Additional metadata (ip, requestId, path, etc.)
+ */
+export const logSecurity = (event, meta = {}) => {
+  const message = `SECURITY ${event.toUpperCase()}`;
+  logger.warn(message, { event, ...meta });
+};
+
+/**
  * Log error with context
  * @param {Error} error - Error object
  * @param {Object} context - Additional context

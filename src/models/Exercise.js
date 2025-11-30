@@ -49,30 +49,6 @@ const demonstrationSchema = new mongoose.Schema(
         message: "Video URL must be a valid HTTP/HTTPS URL",
       },
     },
-    thumbnailUrl: {
-      type: String,
-      trim: true,
-      validate: {
-        validator: function (v) {
-          // Allow empty string or valid URL
-          if (!v) return true;
-          return /^https?:\/\/.+/.test(v);
-        },
-        message: "Thumbnail URL must be a valid HTTP/HTTPS URL",
-      },
-    },
-    gifUrl: {
-      type: String,
-      trim: true,
-      validate: {
-        validator: function (v) {
-          // Allow empty string or valid URL
-          if (!v) return true;
-          return /^https?:\/\/.+/.test(v);
-        },
-        message: "GIF URL must be a valid HTTP/HTTPS URL",
-      },
-    },
     duration: {
       type: Number,
       min: 0,
@@ -207,7 +183,7 @@ const exerciseSchema = new mongoose.Schema(
       type: demonstrationSchema,
       default: {},
     },
-    // Legacy support: allow videoUrl, thumbnailUrl, gifUrl at root level
+    // Legacy support: allow videoUrl at root level
     videoUrl: {
       type: String,
       trim: true,
@@ -217,28 +193,6 @@ const exerciseSchema = new mongoose.Schema(
           return /^https?:\/\/.+/.test(v);
         },
         message: "Video URL must be a valid HTTP/HTTPS URL",
-      },
-    },
-    thumbnailUrl: {
-      type: String,
-      trim: true,
-      validate: {
-        validator: function (v) {
-          if (!v) return true;
-          return /^https?:\/\/.+/.test(v);
-        },
-        message: "Thumbnail URL must be a valid HTTP/HTTPS URL",
-      },
-    },
-    gifUrl: {
-      type: String,
-      trim: true,
-      validate: {
-        validator: function (v) {
-          if (!v) return true;
-          return /^https?:\/\/.+/.test(v);
-        },
-        message: "GIF URL must be a valid HTTP/HTTPS URL",
       },
     },
     isActive: {

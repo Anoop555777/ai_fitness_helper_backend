@@ -36,9 +36,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=YaXPRqUwItQ",
-      "thumbnailUrl": "https://img.youtube.com/vi/YaXPRqUwItQ/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531533/fitness-form-helper/exercises/squat.mp4",
       "duration": 8,
       "formCheckpoints": [
         {
@@ -130,9 +128,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=uYumuL_G_Vk",
-      "thumbnailUrl": "https://img.youtube.com/vi/uYumuL_G_Vk/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531473/fitness-form-helper/exercises/front-squat.mp4"
     }
   },
   {
@@ -174,9 +170,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=SW_C1A-WpbE",
-      "thumbnailUrl": "https://img.youtube.com/vi/SW_C1A-WpbE/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531408/fitness-form-helper/exercises/back-squat.mp4"
     }
   },
   {
@@ -211,9 +205,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4",
-      "thumbnailUrl": "https://img.youtube.com/vi/IODxDxX7oi4/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/CCq1_EmXpzoAAAAC/pushup-exercise.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531514/fitness-form-helper/exercises/push-up.mp4",
       "duration": 6,
       "formCheckpoints": [
         {
@@ -295,9 +287,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=op9kVnSso6Q",
-      "thumbnailUrl": "https://img.youtube.com/vi/op9kVnSso6Q/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/NgtmNzYYAzYAAAAC/deadlift-james-smith.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531425/fitness-form-helper/exercises/deadlift.mp4",
       "duration": 10,
       "formCheckpoints": [
         {
@@ -377,9 +367,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
-      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/FMpev4Dz3RMAAAAC/plank-to-squat-exercise.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531501/fitness-form-helper/exercises/plank.mp4",
       "duration": 5,
       "formCheckpoints": [
         {
@@ -438,9 +426,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
-      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/_xuHbTRKSlgAAAAC/lunges-sheamus.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531494/fitness-form-helper/exercises/lunge.mp4",
       "duration": 7,
       "formCheckpoints": [
         {
@@ -517,9 +503,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
-      "thumbnailUrl": "https://img.youtube.com/vi/rT7DgCr-3pg/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/aDKEuBym_I8AAAAC/gym-exercise.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531410/fitness-form-helper/exercises/bench-press.mp4",
       "duration": 8,
       "formCheckpoints": [
         {
@@ -597,8 +581,6 @@
     "isActive": true,
     "demonstration": {
       "videoUrl": "https://www.youtube.com/watch?v=eGo4IYlbE5g",
-      "thumbnailUrl": "https://img.youtube.com/vi/eGo4IYlbE5g/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/Lq4uADWXzpUAAAAC/pull-ups-working-out.gif",
       "duration": 7,
       "formCheckpoints": [
         {
@@ -675,9 +657,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
-      "thumbnailUrl": "https://img.youtube.com/vi/_oyxCn2iSjU/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/sJ1xs4-DxfAAAAAC/landmine-press-stephen-farrelly.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531499/fitness-form-helper/exercises/overhead-press.mp4",
       "duration": 8,
       "formCheckpoints": [
         {
@@ -758,9 +738,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=JCXUYuzwNrM",
-      "thumbnailUrl": "https://img.youtube.com/vi/JCXUYuzwNrM/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/9-bFBCBJhCAAAAAC/deadlift-michalisbon.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531518/fitness-form-helper/exercises/romanian-deadlift.mp4",
       "duration": 9,
       "formCheckpoints": [
         {
@@ -841,9 +819,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=auBLPXO8Fww",
-      "thumbnailUrl": "https://img.youtube.com/vi/auBLPXO8Fww/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/kup6KNAh1-oAAAAC/work-out-naomi-campbell.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531455/fitness-form-helper/exercises/dumbbell-row.mp4",
       "duration": 7,
       "formCheckpoints": [
         {
@@ -922,9 +898,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=TYT7z8qZ1Mw",
-      "thumbnailUrl": "https://img.youtube.com/vi/TYT7z8qZ1Mw/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/uAtJlrhNoWQAAAAC/burpees-stephen-farrelly.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531418/fitness-form-helper/exercises/burpee.mp4",
       "duration": 6,
       "formCheckpoints": [
         {
@@ -1010,9 +984,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/JByBVZCIFdsAAAAC/mountain-climbers.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=nmwgirgXLYM",
-      "thumbnailUrl": "https://img.youtube.com/vi/nmwgirgXLYM/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531496/fitness-form-helper/exercises/mountain-climber.mp4"
     }
   },
   {
@@ -1047,9 +1019,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM",
-      "thumbnailUrl": "https://img.youtube.com/vi/UpH7rm0cYbM/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531487/fitness-form-helper/exercises/jumping-jacks.mp4"
     }
   },
   {
@@ -1083,9 +1053,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/JOkZmNENGU0AAAAC/bicep-curl-biceps.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo",
-      "thumbnailUrl": "https://img.youtube.com/vi/ykJmrZ5v0Oo/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531413/fitness-form-helper/exercises/bicep-curl.mp4"
     }
   },
   {
@@ -1120,9 +1088,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/Aq6euho3C5wAAAAC/dip-workout.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=6kALZikXxLc",
-      "thumbnailUrl": "https://img.youtube.com/vi/6kALZikXxLc/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531539/fitness-form-helper/exercises/tricep-dip.mp4"
     }
   },
   {
@@ -1157,7 +1123,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/FoIEqZY1mSgAAAAC/leg-press-workout.gif"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531491/fitness-form-helper/exercises/leg-press.mp4"
     }
   },
   {
@@ -1190,9 +1156,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/TBOR9mdMct4AAAAC/leg-raises-crunches.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
-      "thumbnailUrl": "https://img.youtube.com/vi/-M4-G8p8fmc/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531420/fitness-form-helper/exercises/calf-raise.mp4"
     }
   },
   {
@@ -1226,9 +1190,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/qdZ6NKCGBZIAAAAC/happy-fit-challenge-workout.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=wkD8rjkod4o",
-      "thumbnailUrl": "https://img.youtube.com/vi/wkD8rjkod4o/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531521/fitness-form-helper/exercises/russian-twist.mp4"
     }
   },
   {
@@ -1263,9 +1225,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "videoUrl": "https://www.youtube.com/watch?v=nmwgirgXLYM",
-      "thumbnailUrl": "https://img.youtube.com/vi/nmwgirgXLYM/maxresdefault.jpg",
-      "gifUrl": "https://media.tenor.com/qbQSyAyD1I4AAAAC/mirae-mirae-junhyuk.gif",
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531481/fitness-form-helper/exercises/hip-thrust.mp4",
       "duration": 8,
       "formCheckpoints": [
         {
@@ -1342,9 +1302,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/ohdQMV-9SrkAAAAC/pamela-pamela-reif.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
-      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531523/fitness-form-helper/exercises/side-plank.mp4"
     }
   },
   {
@@ -1379,9 +1337,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
-      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531485/fitness-form-helper/exercises/box-jump.mp4"
     }
   },
   {
@@ -1421,9 +1377,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/LZhJGXEfnhIAAAAC/borna-coric-leg-lifts.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=-cdph8hv0O0",
-      "thumbnailUrl": "https://img.youtube.com/vi/-cdph8hv0O0/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531546/fitness-form-helper/exercises/wall-sit.mp4"
     }
   },
   {
@@ -1463,9 +1417,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/MPGfMU7LAigAAAAC/home-workouts-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=rC3v6rCBvqI",
-      "thumbnailUrl": "https://img.youtube.com/vi/rC3v6rCBvqI/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531483/fitness-form-helper/exercises/hollow-hold.mp4"
     }
   },
   {
@@ -1504,9 +1456,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/o1OfcM6fxO4AAAAC/workout-working-out.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=g_BYB0R-4Ws",
-      "thumbnailUrl": "https://img.youtube.com/vi/g_BYB0R-4Ws/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=g_BYB0R-4Ws"
     }
   },
   {
@@ -1548,9 +1498,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/ohdQMV-9SrkAAAAC/pamela-pamela-reif.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=44ScXWFaVBs",
-      "thumbnailUrl": "https://img.youtube.com/vi/44ScXWFaVBs/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531516/fitness-form-helper/exercises/reverse-plank.mp4"
     }
   },
   {
@@ -1591,9 +1539,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/kkW0wQNQkh0AAAAC/superman.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=cc6TT5y6aw4",
-      "thumbnailUrl": "https://img.youtube.com/vi/cc6TT5y6aw4/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531537/fitness-form-helper/exercises/superman-hold.mp4"
     }
   },
   {
@@ -1634,9 +1580,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/KWB1fvFlzjgAAAAC/barbell-glute.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=wPM8icPu6H8",
-      "thumbnailUrl": "https://img.youtube.com/vi/wPM8icPu6H8/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=wPM8icPu6H8"
     }
   },
   {
@@ -1676,9 +1620,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/6e9R6ktpmjQAAAAC/single-leg-butt-bridge.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=4Y2ZdHCOXok",
-      "thumbnailUrl": "https://img.youtube.com/vi/4Y2ZdHCOXok/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531527/fitness-form-helper/exercises/single-leg-glute-bridge-hold.mp4"
     }
   },
   {
@@ -1719,9 +1661,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/3dNF8-AkEMsAAAAC/working-my-abs-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=W6N27a8uUxs",
-      "thumbnailUrl": "https://img.youtube.com/vi/W6N27a8uUxs/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=W6N27a8uUxs"
     }
   },
   {
@@ -1762,9 +1702,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/V849xTRau1cAAAAC/hand-stand-balance.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=Y7M-gR2J8Ds",
-      "thumbnailUrl": "https://img.youtube.com/vi/Y7M-gR2J8Ds/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531544/fitness-form-helper/exercises/wall-handstand-hold.mp4"
     }
   },
   {
@@ -1806,9 +1744,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/MPGfMU7LAigAAAAC/home-workouts-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=Fkzk_RqlYig",
-      "thumbnailUrl": "https://img.youtube.com/vi/Fkzk_RqlYig/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531469/fitness-form-helper/exercises/farmers-walk.mp4"
     }
   },
   {
@@ -1848,9 +1784,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/73Sld1d9MbkAAAAC/plank-workout.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
-      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531471/fitness-form-helper/exercises/forearm-plank.mp4"
     }
   },
   {
@@ -1891,9 +1825,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/FMpev4Dz3RMAAAAC/plank-to-squat-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
-      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531478/fitness-form-helper/exercises/high-plank-hold.mp4"
     }
   },
   {
@@ -1934,9 +1866,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M",
-      "thumbnailUrl": "https://img.youtube.com/vi/CVaEhXotL7M/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531489/fitness-form-helper/exercises/jump-squat.mp4"
     }
   },
   {
@@ -1977,9 +1907,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/73NJk5DQjGwAAAAC/exercise-fitness.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
-      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531416/fitness-form-helper/exercises/broad-jump.mp4"
     }
   },
   {
@@ -2021,9 +1949,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M",
-      "thumbnailUrl": "https://img.youtube.com/vi/CVaEhXotL7M/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531542/fitness-form-helper/exercises/tuck-jump.mp4"
     }
   },
   {
@@ -2064,9 +1990,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/rZ5I5KophgwAAAAC/exercise-workout.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
-      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531529/fitness-form-helper/exercises/single-leg-hop.mp4"
     }
   },
   {
@@ -2107,9 +2031,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/wEitxLHgDYMAAAAC/workout-working-out.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
-      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA"
     }
   },
   {
@@ -2150,9 +2072,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/5-hwzJ8VL2EAAAAC/jump-rope-sheamus.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
-      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531427/fitness-form-helper/exercises/depth-jump.mp4"
     }
   },
   {
@@ -2193,9 +2113,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/5c3eLTAGPF8AAAAC/push-ups-rakul-preet.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4",
-      "thumbnailUrl": "https://img.youtube.com/vi/IODxDxX7oi4/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531508/fitness-form-helper/exercises/plyometric-push-up.mp4"
     }
   },
   {
@@ -2237,9 +2155,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM",
-      "thumbnailUrl": "https://img.youtube.com/vi/UpH7rm0cYbM/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM"
     }
   },
   {
@@ -2280,9 +2196,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
-      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531531/fitness-form-helper/exercises/split-jump.mp4"
     }
   },
   {
@@ -2323,9 +2237,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/EbRmSXrs5JQAAAAC/clap-pushups-stephen-farrelly.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4",
-      "thumbnailUrl": "https://img.youtube.com/vi/IODxDxX7oi4/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531423/fitness-form-helper/exercises/clapping-push-up.mp4"
     }
   },
   {
@@ -2366,9 +2278,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/5-hwzJ8VL2EAAAAC/jump-rope-sheamus.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
-      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531525/fitness-form-helper/exercises/single-leg-box-jump.mp4"
     }
   },
   {
@@ -2408,9 +2318,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
-      "thumbnailUrl": "https://img.youtube.com/vi/-M4-G8p8fmc/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc"
     }
   },
   {
@@ -2452,9 +2360,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/LQ66sZzkA68AAAAC/jumping-jacks-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM",
-      "thumbnailUrl": "https://img.youtube.com/vi/UpH7rm0cYbM/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531535/fitness-form-helper/exercises/star-jump.mp4"
     }
   },
   {
@@ -2496,9 +2402,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M",
-      "thumbnailUrl": "https://img.youtube.com/vi/CVaEhXotL7M/maxresdefault.jpg"
+      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M"
     }
   },
   {
@@ -2546,9 +2450,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/K6mJpEVYP3MAAAAC/full-body-exercise-yoga.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=0x7k3SYn4vY",
-      "thumbnailUrl": "https://img.youtube.com/vi/0x7k3SYn4vY/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531475/fitness-form-helper/exercises/hang-clean.mp4"
     }
   },
   {
@@ -2597,9 +2499,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/DxkolW-N_pYAAAAC/workout-dumpel.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=0x7k3SYn4vY",
-      "thumbnailUrl": "https://img.youtube.com/vi/0x7k3SYn4vY/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531512/fitness-form-helper/exercises/power-clean.mp4"
     }
   },
   {
@@ -2639,9 +2539,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/T_vqvD5qG-YAAAAC/shoulder-press-seated-shoulder-press.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
-      "thumbnailUrl": "https://img.youtube.com/vi/_oyxCn2iSjU/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531457/fitness-form-helper/exercises/dumbbell-shoulder-press.mp4"
     }
   },
   {
@@ -2681,9 +2579,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/Tb1J2ykmJlkAAAAC/chestday-chestworkout.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
-      "thumbnailUrl": "https://img.youtube.com/vi/rT7DgCr-3pg/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531434/fitness-form-helper/exercises/dumbbell-bench-press.mp4"
     }
   },
   {
@@ -2725,9 +2621,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/5z4q0v91sNYAAAAC/squats-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=YaXPRqUwItQ",
-      "thumbnailUrl": "https://img.youtube.com/vi/YaXPRqUwItQ/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531462/fitness-form-helper/exercises/dumbbell-squat.mp4"
     }
   },
   {
@@ -2768,9 +2662,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/KOkn9T5BiooAAAAC/curtsylunge-lunge.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
-      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531429/fitness-form-helper/exercises/dumbbell-lunge.mp4"
     }
   },
   {
@@ -2811,9 +2703,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/VSY6K8y4zEIAAAAC/romanian-deadlift-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=JCXUYuzwNrM",
-      "thumbnailUrl": "https://img.youtube.com/vi/JCXUYuzwNrM/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531453/fitness-form-helper/exercises/dumbbell-romanian-deadlift.mp4"
     }
   },
   {
@@ -2852,9 +2742,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/ClpO4TlEYhQAAAAC/pulling-upasana-kamineni-konidela.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=e1Xa2gZ3cYk",
-      "thumbnailUrl": "https://img.youtube.com/vi/e1Xa2gZ3cYk/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531438/fitness-form-helper/exercises/dumbbell-fly.mp4"
     }
   },
   {
@@ -2893,9 +2781,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/cy46UbnfUrkAAAAC/eleva%C3%A7%C3%A3o-lateral-hateres.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo",
-      "thumbnailUrl": "https://img.youtube.com/vi/3VcKaXpzqRo/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531444/fitness-form-helper/exercises/dumbbell-lateral-raise.mp4"
     }
   },
   {
@@ -2934,9 +2820,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/vFLnrUUJtRQAAAAC/dumbells-front-raise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo",
-      "thumbnailUrl": "https://img.youtube.com/vi/3VcKaXpzqRo/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531440/fitness-form-helper/exercises/dumbbell-front-raise.mp4"
     }
   },
   {
@@ -2974,9 +2858,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/V3J-mg9gH0kAAAAC/seated-dumbbell-triceps-extension.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=6kALZikXxLc",
-      "thumbnailUrl": "https://img.youtube.com/vi/6kALZikXxLc/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531466/fitness-form-helper/exercises/dumbbell-tricep-extension.mp4"
     }
   },
   {
@@ -3016,9 +2898,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/bD-xqk220MMAAAAC/miodek.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo",
-      "thumbnailUrl": "https://img.youtube.com/vi/ykJmrZ5v0Oo/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531467/fitness-form-helper/exercises/dumbbell-hammer-curl.mp4"
     }
   },
   {
@@ -3059,9 +2939,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/NH_OirQp6OsAAAAC/squats-sheamus.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=YaXPRqUwItQ",
-      "thumbnailUrl": "https://img.youtube.com/vi/YaXPRqUwItQ/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531442/fitness-form-helper/exercises/dumbbell-goblet-squat.mp4"
     }
   },
   {
@@ -3102,9 +2980,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/W3zfuHShZlgAAAAC/stair-master-exercise.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
-      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531464/fitness-form-helper/exercises/dumbbell-step-up.mp4"
     }
   },
   {
@@ -3145,9 +3021,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/TPJawIY5nMoAAAAC/db-pullover-dumbbell-workout.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=e1Xa2gZ3cYk",
-      "thumbnailUrl": "https://img.youtube.com/vi/e1Xa2gZ3cYk/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531449/fitness-form-helper/exercises/dumbbell-pullover.mp4"
     }
   },
   {
@@ -3186,9 +3060,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/ZFGhZdaLtcQAAAAC/exercise-karna-sevengers.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo",
-      "thumbnailUrl": "https://img.youtube.com/vi/3VcKaXpzqRo/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531459/fitness-form-helper/exercises/dumbbell-shrug.mp4"
     }
   },
   {
@@ -3228,9 +3100,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/HTvjufujuJAAAAAC/rear-raise-rear.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=auBLPXO8Fww",
-      "thumbnailUrl": "https://img.youtube.com/vi/auBLPXO8Fww/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531451/fitness-form-helper/exercises/dumbbell-reverse-fly.mp4"
     }
   },
   {
@@ -3268,9 +3138,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/TBOR9mdMct4AAAAC/leg-raises-crunches.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
-      "thumbnailUrl": "https://img.youtube.com/vi/-M4-G8p8fmc/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531436/fitness-form-helper/exercises/dumbbell-calf-raise.mp4"
     }
   },
   {
@@ -3308,9 +3176,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/V3J-mg9gH0kAAAAC/seated-dumbbell-triceps-extension.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=6kALZikXxLc",
-      "thumbnailUrl": "https://img.youtube.com/vi/6kALZikXxLc/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531446/fitness-form-helper/exercises/dumbbell-overhead-tricep-extension.mp4"
     }
   },
   {
@@ -3350,9 +3216,7 @@
     ],
     "isActive": true,
     "demonstration": {
-      "gifUrl": "https://media.tenor.com/sJ1xs4-DxfAAAAAC/landmine-press-stephen-farrelly.gif",
-      "videoUrl": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
-      "thumbnailUrl": "https://img.youtube.com/vi/_oyxCn2iSjU/maxresdefault.jpg"
+      "videoUrl": "https://res.cloudinary.com/dnwwado7g/video/upload/v1764531431/fitness-form-helper/exercises/dumbbell-arnold-press.mp4"
     }
   }
 ]
