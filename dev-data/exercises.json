@@ -1,0 +1,3358 @@
+[
+  {
+    "name": "Squat",
+    "category": "strength",
+    "description": "A fundamental lower body exercise that targets quadriceps, glutes, and hamstrings",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Lower your body by bending knees and hips",
+      "Keep your back straight and chest up",
+      "Lower until thighs are parallel to ground",
+      "Push through heels to return to starting position"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=YaXPRqUwItQ",
+      "thumbnailUrl": "https://img.youtube.com/vi/YaXPRqUwItQ/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif",
+      "duration": 8,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "kneeAngle": 180,
+            "hipAngle": 180
+          },
+          "description": "Starting position with straight legs and upright torso"
+        },
+        {
+          "time": 2.5,
+          "position": "bottom",
+          "keyAngles": {
+            "kneeAngle": 90,
+            "hipAngle": 90
+          },
+          "description": "Bottom position - thighs parallel to ground"
+        },
+        {
+          "time": 5,
+          "position": "return",
+          "keyAngles": {
+            "kneeAngle": 180,
+            "hipAngle": 180
+          },
+          "description": "Return to starting position"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Knees caving inward",
+          "visualCue": "Keep knees tracking over toes throughout the movement",
+          "description": "This can cause knee injury and reduces exercise effectiveness"
+        },
+        {
+          "mistake": "Forward lean",
+          "visualCue": "Maintain upright torso, chest up",
+          "description": "Excessive forward lean puts strain on lower back"
+        },
+        {
+          "mistake": "Heels lifting off ground",
+          "visualCue": "Keep entire foot flat, especially heels",
+          "description": "Lifting heels reduces stability and power"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Front Squat",
+    "category": "strength",
+    "description": "A barbell squat variation with the bar positioned in front, emphasizing quadriceps and core strength",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "core",
+      "upper back"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Position bar across front deltoids with crossed arms or clean grip",
+      "Keep elbows high and chest up",
+      "Stand with feet shoulder-width apart",
+      "Lower by bending knees and hips while keeping torso upright",
+      "Descend until thighs are parallel to ground",
+      "Drive through heels to return to starting position"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=uYumuL_G_Vk",
+      "thumbnailUrl": "https://img.youtube.com/vi/uYumuL_G_Vk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Back Squat",
+    "category": "strength",
+    "description": "The classic barbell squat with bar positioned on upper back, allowing for maximum loading",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -15,
+        "max": 10
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Position bar on upper traps or rear deltoids",
+      "Stand with feet shoulder-width apart, toes slightly turned out",
+      "Keep chest up and core braced",
+      "Lower by bending knees and hips simultaneously",
+      "Descend until thighs are parallel to ground or below",
+      "Drive through entire foot to return to standing position"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/pK5zTO5oSkwAAAAC/squat-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=SW_C1A-WpbE",
+      "thumbnailUrl": "https://img.youtube.com/vi/SW_C1A-WpbE/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Push-up",
+    "category": "strength",
+    "description": "A classic upper body exercise targeting chest, shoulders, and triceps",
+    "targetMuscles": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Start in plank position with hands shoulder-width apart",
+      "Lower body until chest nearly touches ground",
+      "Keep body in straight line",
+      "Push back up to starting position"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4",
+      "thumbnailUrl": "https://img.youtube.com/vi/IODxDxX7oi4/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/CCq1_EmXpzoAAAAC/pushup-exercise.gif",
+      "duration": 6,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "shoulderAngle": 180,
+            "backAngle": 0
+          },
+          "description": "Starting plank position with straight body"
+        },
+        {
+          "time": 2,
+          "position": "bottom",
+          "keyAngles": {
+            "shoulderAngle": 90,
+            "backAngle": 0
+          },
+          "description": "Bottom position - chest nearly touching ground"
+        },
+        {
+          "time": 4,
+          "position": "return",
+          "keyAngles": {
+            "shoulderAngle": 180,
+            "backAngle": 0
+          },
+          "description": "Return to starting position"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Sagging hips",
+          "visualCue": "Keep body in straight line from head to heels",
+          "description": "Sagging hips reduces core engagement and can cause back strain"
+        },
+        {
+          "mistake": "Incomplete range of motion",
+          "visualCue": "Lower until chest nearly touches ground",
+          "description": "Not going low enough reduces muscle activation"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Deadlift",
+    "category": "strength",
+    "description": "A compound exercise targeting posterior chain muscles",
+    "targetMuscles": [
+      "hamstrings",
+      "glutes",
+      "lower back",
+      "core"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -20,
+        "max": 20
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "kneeAngle": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Bend at hips and knees to grip bar",
+      "Keep back straight and chest up",
+      "Lift by extending hips and knees",
+      "Lower bar with controlled motion"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=op9kVnSso6Q",
+      "thumbnailUrl": "https://img.youtube.com/vi/op9kVnSso6Q/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/NgtmNzYYAzYAAAAC/deadlift-james-smith.gif",
+      "duration": 10,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "backAngle": 0,
+            "hipAngle": 0,
+            "kneeAngle": 0
+          },
+          "description": "Starting position - feet hip-width, bar over mid-foot"
+        },
+        {
+          "time": 2,
+          "position": "grip",
+          "keyAngles": {
+            "backAngle": -20,
+            "hipAngle": 45,
+            "kneeAngle": 15
+          },
+          "description": "Grip position - back straight, chest up"
+        },
+        {
+          "time": 4,
+          "position": "lift",
+          "keyAngles": {
+            "backAngle": 0,
+            "hipAngle": 0,
+            "kneeAngle": 0
+          },
+          "description": "Full extension - hips and knees fully extended"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Rounded back",
+          "visualCue": "Keep back straight and chest up throughout",
+          "description": "Rounded back can cause serious injury"
+        },
+        {
+          "mistake": "Bar drifting away from body",
+          "visualCue": "Keep bar close to legs throughout the lift",
+          "description": "Bar should travel in a straight vertical line"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Plank",
+    "category": "strength",
+    "description": "An isometric core strengthening exercise",
+    "targetMuscles": [
+      "core",
+      "shoulders",
+      "glutes"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start in push-up position",
+      "Lower to forearms",
+      "Keep body in straight line",
+      "Hold position while engaging core",
+      "Breathe normally"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/FMpev4Dz3RMAAAAC/plank-to-squat-exercise.gif",
+      "duration": 5,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "hold",
+          "keyAngles": {
+            "backAngle": 0,
+            "shoulderAngle": 180
+          },
+          "description": "Maintain straight line from head to heels"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Hips too high or too low",
+          "visualCue": "Keep hips level with shoulders and heels",
+          "description": "Hips should form straight line with body"
+        },
+        {
+          "mistake": "Head dropping",
+          "visualCue": "Keep neck neutral, look at floor",
+          "description": "Dropping head can strain neck"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Lunge",
+    "category": "strength",
+    "description": "A unilateral lower body exercise",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Step forward with one leg",
+      "Lower body until both knees are at 90 degrees",
+      "Push back to starting position",
+      "Repeat with other leg"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
+      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/_xuHbTRKSlgAAAAC/lunges-sheamus.gif",
+      "duration": 7,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "kneeAngle": 180,
+            "hipAngle": 180
+          },
+          "description": "Starting position - standing tall"
+        },
+        {
+          "time": 2,
+          "position": "bottom",
+          "keyAngles": {
+            "kneeAngle": 90,
+            "hipAngle": 90
+          },
+          "description": "Bottom position - both knees at 90 degrees"
+        },
+        {
+          "time": 4,
+          "position": "return",
+          "keyAngles": {
+            "kneeAngle": 180,
+            "hipAngle": 180
+          },
+          "description": "Return to starting position"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Front knee going past toes",
+          "visualCue": "Keep front knee aligned over ankle",
+          "description": "Knee past toes increases injury risk"
+        },
+        {
+          "mistake": "Leaning forward",
+          "visualCue": "Keep torso upright throughout",
+          "description": "Maintain vertical torso position"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bench Press",
+    "category": "strength",
+    "description": "A compound upper body exercise for chest, shoulders, and triceps",
+    "targetMuscles": [
+      "chest",
+      "shoulders",
+      "triceps"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Lie on bench with feet flat on floor",
+      "Grip bar slightly wider than shoulder-width",
+      "Lower bar to chest with control",
+      "Press bar up until arms are fully extended",
+      "Keep core engaged throughout"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
+      "thumbnailUrl": "https://img.youtube.com/vi/rT7DgCr-3pg/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/aDKEuBym_I8AAAAC/gym-exercise.gif",
+      "duration": 8,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "shoulderAngle": 180,
+            "elbowAngle": 180
+          },
+          "description": "Starting position - bar at full extension"
+        },
+        {
+          "time": 2.5,
+          "position": "bottom",
+          "keyAngles": {
+            "shoulderAngle": 90,
+            "elbowAngle": 0
+          },
+          "description": "Bottom position - bar touches chest"
+        },
+        {
+          "time": 5,
+          "position": "return",
+          "keyAngles": {
+            "shoulderAngle": 180,
+            "elbowAngle": 180
+          },
+          "description": "Press back to starting position"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Bouncing bar off chest",
+          "visualCue": "Control the descent, pause at chest",
+          "description": "Bouncing reduces muscle engagement and can cause injury"
+        },
+        {
+          "mistake": "Feet lifting off ground",
+          "visualCue": "Keep feet flat on floor for stability",
+          "description": "Feet provide stability and power"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Pull-up",
+    "category": "strength",
+    "description": "An upper body pulling exercise targeting back and biceps",
+    "targetMuscles": [
+      "lats",
+      "biceps",
+      "rhomboids",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Hang from bar with palms facing away",
+      "Pull body up until chin clears bar",
+      "Lower with control to full extension",
+      "Keep core engaged and avoid swinging"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=eGo4IYlbE5g",
+      "thumbnailUrl": "https://img.youtube.com/vi/eGo4IYlbE5g/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/Lq4uADWXzpUAAAAC/pull-ups-working-out.gif",
+      "duration": 7,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "shoulderAngle": 0,
+            "elbowAngle": 180
+          },
+          "description": "Starting position - full arm extension"
+        },
+        {
+          "time": 2,
+          "position": "top",
+          "keyAngles": {
+            "shoulderAngle": 0,
+            "elbowAngle": 0
+          },
+          "description": "Top position - chin over bar"
+        },
+        {
+          "time": 4,
+          "position": "return",
+          "keyAngles": {
+            "shoulderAngle": 0,
+            "elbowAngle": 180
+          },
+          "description": "Lower with control to starting position"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Swinging or kipping",
+          "visualCue": "Keep body still, use only arm strength",
+          "description": "Swinging reduces muscle engagement"
+        },
+        {
+          "mistake": "Not going full range of motion",
+          "visualCue": "Lower until arms are fully extended",
+          "description": "Incomplete ROM reduces effectiveness"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Overhead Press",
+    "category": "strength",
+    "description": "A vertical pressing movement for shoulders and triceps",
+    "targetMuscles": [
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold bar at shoulder height",
+      "Press bar overhead until arms are extended",
+      "Lower with control to starting position",
+      "Keep core tight throughout"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
+      "thumbnailUrl": "https://img.youtube.com/vi/_oyxCn2iSjU/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/sJ1xs4-DxfAAAAAC/landmine-press-stephen-farrelly.gif",
+      "duration": 8,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "shoulderAngle": 90,
+            "backAngle": 0
+          },
+          "description": "Starting position - bar at shoulder height"
+        },
+        {
+          "time": 3,
+          "position": "top",
+          "keyAngles": {
+            "shoulderAngle": 180,
+            "backAngle": 0
+          },
+          "description": "Top position - arms fully extended overhead"
+        },
+        {
+          "time": 6,
+          "position": "return",
+          "keyAngles": {
+            "shoulderAngle": 90,
+            "backAngle": 0
+          },
+          "description": "Lower with control to starting position"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Arching back excessively",
+          "visualCue": "Keep core tight, minimal back arch",
+          "description": "Excessive arching can cause lower back strain"
+        },
+        {
+          "mistake": "Pressing forward instead of up",
+          "visualCue": "Press bar straight up, not forward",
+          "description": "Bar should travel in vertical line"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Romanian Deadlift",
+    "category": "strength",
+    "description": "A hip-hinge movement targeting hamstrings and glutes",
+    "targetMuscles": [
+      "hamstrings",
+      "glutes",
+      "lower back"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -30,
+        "max": 10
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "kneeAngle": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hinge at hips while keeping knees slightly bent",
+      "Lower weight along legs",
+      "Feel stretch in hamstrings",
+      "Return to standing by extending hips"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=JCXUYuzwNrM",
+      "thumbnailUrl": "https://img.youtube.com/vi/JCXUYuzwNrM/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/9-bFBCBJhCAAAAAC/deadlift-michalisbon.gif",
+      "duration": 9,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "backAngle": 0,
+            "hipAngle": 0,
+            "kneeAngle": 10
+          },
+          "description": "Starting position - standing tall"
+        },
+        {
+          "time": 2,
+          "position": "bottom",
+          "keyAngles": {
+            "backAngle": -30,
+            "hipAngle": 90,
+            "kneeAngle": 10
+          },
+          "description": "Bottom position - feel stretch in hamstrings"
+        },
+        {
+          "time": 5,
+          "position": "return",
+          "keyAngles": {
+            "backAngle": 0,
+            "hipAngle": 0,
+            "kneeAngle": 10
+          },
+          "description": "Return by extending hips"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Bending knees too much",
+          "visualCue": "Keep knees slightly bent, focus on hip hinge",
+          "description": "RDL is a hip-dominant movement"
+        },
+        {
+          "mistake": "Rounding back",
+          "visualCue": "Maintain neutral spine throughout",
+          "description": "Keep back straight to protect spine"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dumbbell Row",
+    "category": "strength",
+    "description": "A unilateral pulling exercise for back muscles",
+    "targetMuscles": [
+      "lats",
+      "rhomboids",
+      "biceps",
+      "rear delts"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -45,
+        "max": -15
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Bend over with one knee on bench",
+      "Pull dumbbell to lower chest/upper abdomen",
+      "Squeeze back muscles at top",
+      "Lower with control",
+      "Repeat on other side"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=auBLPXO8Fww",
+      "thumbnailUrl": "https://img.youtube.com/vi/auBLPXO8Fww/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/kup6KNAh1-oAAAAC/work-out-naomi-campbell.gif",
+      "duration": 7,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "backAngle": -30,
+            "shoulderAngle": 0
+          },
+          "description": "Bent over position with one knee on bench"
+        },
+        {
+          "time": 2,
+          "position": "pull",
+          "keyAngles": {
+            "backAngle": -30,
+            "shoulderAngle": 90
+          },
+          "description": "Pull dumbbell to lower chest"
+        },
+        {
+          "time": 4,
+          "position": "return",
+          "keyAngles": {
+            "backAngle": -30,
+            "shoulderAngle": 0
+          },
+          "description": "Lower with control"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Using momentum to swing weight",
+          "visualCue": "Control the movement, no swinging",
+          "description": "Use back muscles, not momentum"
+        },
+        {
+          "mistake": "Rotating torso",
+          "visualCue": "Keep torso stable throughout",
+          "description": "Maintain neutral spine position"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Burpee",
+    "category": "cardio",
+    "description": "A full-body explosive movement combining squat, plank, and jump",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "chest",
+      "shoulders",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Start standing",
+      "Squat down and place hands on floor",
+      "Jump feet back to plank position",
+      "Do a push-up (optional)",
+      "Jump feet forward and explode up"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=TYT7z8qZ1Mw",
+      "thumbnailUrl": "https://img.youtube.com/vi/TYT7z8qZ1Mw/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/uAtJlrhNoWQAAAAC/burpees-stephen-farrelly.gif",
+      "duration": 6,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "kneeAngle": 180,
+            "hipAngle": 180
+          },
+          "description": "Starting standing position"
+        },
+        {
+          "time": 1,
+          "position": "squat",
+          "keyAngles": {
+            "kneeAngle": 90,
+            "hipAngle": 90
+          },
+          "description": "Squat down and place hands on floor"
+        },
+        {
+          "time": 2,
+          "position": "plank",
+          "keyAngles": {
+            "kneeAngle": 180,
+            "hipAngle": 180
+          },
+          "description": "Jump back to plank position"
+        },
+        {
+          "time": 3.5,
+          "position": "jump",
+          "keyAngles": {
+            "kneeAngle": 0,
+            "hipAngle": 0
+          },
+          "description": "Jump up explosively"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Sagging in plank position",
+          "visualCue": "Keep body straight in plank",
+          "description": "Maintain proper plank form"
+        },
+        {
+          "mistake": "Not landing softly",
+          "visualCue": "Land on balls of feet, absorb impact",
+          "description": "Soft landing reduces injury risk"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mountain Climber",
+    "category": "cardio",
+    "description": "A dynamic core and cardio exercise",
+    "targetMuscles": [
+      "core",
+      "shoulders",
+      "hip flexors"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Start in plank position",
+      "Alternate bringing knees to chest",
+      "Keep hips level and core engaged",
+      "Maintain steady breathing",
+      "Move at controlled pace"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/JByBVZCIFdsAAAAC/mountain-climbers.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=nmwgirgXLYM",
+      "thumbnailUrl": "https://img.youtube.com/vi/nmwgirgXLYM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jumping Jacks",
+    "category": "cardio",
+    "description": "A classic full-body cardio exercise",
+    "targetMuscles": [
+      "shoulders",
+      "legs",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    "instructions": [
+      "Stand with feet together and arms at sides",
+      "Jump while spreading legs and raising arms",
+      "Land softly with feet apart",
+      "Jump back to starting position",
+      "Maintain rhythm and breathing"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM",
+      "thumbnailUrl": "https://img.youtube.com/vi/UpH7rm0cYbM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Bicep Curl",
+    "category": "strength",
+    "description": "An isolation exercise for biceps",
+    "targetMuscles": [
+      "biceps",
+      "forearms"
+    ],
+    "formRules": {
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold weights with arms extended",
+      "Curl weights to shoulders",
+      "Squeeze biceps at top",
+      "Lower with control"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/JOkZmNENGU0AAAAC/bicep-curl-biceps.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo",
+      "thumbnailUrl": "https://img.youtube.com/vi/ykJmrZ5v0Oo/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Tricep Dip",
+    "category": "strength",
+    "description": "A bodyweight exercise targeting triceps",
+    "targetMuscles": [
+      "triceps",
+      "shoulders",
+      "chest"
+    ],
+    "formRules": {
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Sit on edge of bench or chair",
+      "Place hands on edge, fingers forward",
+      "Slide forward off bench",
+      "Lower body by bending elbows",
+      "Push back up to starting position"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/Aq6euho3C5wAAAAC/dip-workout.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=6kALZikXxLc",
+      "thumbnailUrl": "https://img.youtube.com/vi/6kALZikXxLc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Leg Press",
+    "category": "strength",
+    "description": "A machine-based lower body exercise",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Sit in leg press machine",
+      "Place feet shoulder-width on platform",
+      "Lower weight by bending knees",
+      "Press through heels to extend legs",
+      "Keep back flat against pad"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "machine"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/FoIEqZY1mSgAAAAC/leg-press-workout.gif"
+    }
+  },
+  {
+    "name": "Calf Raise",
+    "category": "strength",
+    "description": "An isolation exercise for calf muscles",
+    "targetMuscles": [
+      "calves"
+    ],
+    "formRules": {
+      "ankleAngle": {
+        "min": 90,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Rise up onto balls of feet",
+      "Hold at top for a moment",
+      "Lower with control",
+      "Repeat for desired reps"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/TBOR9mdMct4AAAAC/leg-raises-crunches.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
+      "thumbnailUrl": "https://img.youtube.com/vi/-M4-G8p8fmc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Russian Twist",
+    "category": "strength",
+    "description": "A rotational core exercise",
+    "targetMuscles": [
+      "core",
+      "obliques"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -45,
+        "max": 0
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Sit on floor with knees bent",
+      "Lean back slightly, keeping back straight",
+      "Rotate torso side to side",
+      "Keep core engaged throughout",
+      "Add weight for increased difficulty"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/qdZ6NKCGBZIAAAAC/happy-fit-challenge-workout.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=wkD8rjkod4o",
+      "thumbnailUrl": "https://img.youtube.com/vi/wkD8rjkod4o/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Hip Thrust",
+    "category": "strength",
+    "description": "A glute-focused exercise",
+    "targetMuscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "formRules": {
+      "hipAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 70,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Sit with upper back against bench",
+      "Place feet flat on floor",
+      "Drive hips up by squeezing glutes",
+      "Hold at top for a moment",
+      "Lower with control"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "videoUrl": "https://www.youtube.com/watch?v=nmwgirgXLYM",
+      "thumbnailUrl": "https://img.youtube.com/vi/nmwgirgXLYM/maxresdefault.jpg",
+      "gifUrl": "https://media.tenor.com/qbQSyAyD1I4AAAAC/mirae-mirae-junhyuk.gif",
+      "duration": 8,
+      "formCheckpoints": [
+        {
+          "time": 0,
+          "position": "start",
+          "keyAngles": {
+            "hipAngle": 90,
+            "kneeAngle": 90
+          },
+          "description": "Starting position - upper back on bench"
+        },
+        {
+          "time": 3,
+          "position": "top",
+          "keyAngles": {
+            "hipAngle": 180,
+            "kneeAngle": 90
+          },
+          "description": "Top position - hips fully extended"
+        },
+        {
+          "time": 6,
+          "position": "return",
+          "keyAngles": {
+            "hipAngle": 90,
+            "kneeAngle": 90
+          },
+          "description": "Lower with control"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "mistake": "Hyperextending lower back",
+          "visualCue": "Focus on hip extension, not back arch",
+          "description": "Squeeze glutes, don't arch back excessively"
+        },
+        {
+          "mistake": "Knees splaying out",
+          "visualCue": "Keep knees aligned with feet",
+          "description": "Maintain proper knee alignment"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Side Plank",
+    "category": "strength",
+    "description": "An isometric exercise targeting obliques",
+    "targetMuscles": [
+      "obliques",
+      "core",
+      "shoulders"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Lie on side with elbow under shoulder",
+      "Lift hips to form straight line",
+      "Hold position while engaging core",
+      "Keep body aligned",
+      "Switch sides"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/ohdQMV-9SrkAAAAC/pamela-pamela-reif.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Box Jump",
+    "category": "cardio",
+    "description": "An explosive plyometric exercise",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Stand facing box or platform",
+      "Swing arms and jump onto box",
+      "Land softly with both feet",
+      "Stand fully on box",
+      "Step down and repeat"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
+      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Wall Sit",
+    "category": "strength",
+    "description": "An isometric lower body exercise targeting quadriceps and glutes",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 70,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 70,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with back against wall",
+      "Slide down until knees are at 90 degrees",
+      "Keep feet flat on floor, shoulder-width apart",
+      "Hold position while engaging quadriceps and glutes",
+      "Keep back flat against wall",
+      "Breathe normally"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/LZhJGXEfnhIAAAAC/borna-coric-leg-lifts.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=-cdph8hv0O0",
+      "thumbnailUrl": "https://img.youtube.com/vi/-cdph8hv0O0/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Hollow Hold",
+    "category": "strength",
+    "description": "An isometric core exercise that strengthens the entire anterior chain",
+    "targetMuscles": [
+      "core",
+      "hip flexors",
+      "shoulders"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -10,
+        "max": 0
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 30
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Lie on back with arms extended overhead",
+      "Lift shoulders and legs off ground",
+      "Keep lower back pressed to floor",
+      "Hold position while engaging core",
+      "Maintain straight body line",
+      "Breathe steadily"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/MPGfMU7LAigAAAAC/home-workouts-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=rC3v6rCBvqI",
+      "thumbnailUrl": "https://img.youtube.com/vi/rC3v6rCBvqI/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dead Bug Hold",
+    "category": "strength",
+    "description": "An isometric core stability exercise performed in supine position",
+    "targetMuscles": [
+      "core",
+      "hip flexors"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 0
+      },
+      "hipAngle": {
+        "min": 80,
+        "max": 90
+      },
+      "kneeAngle": {
+        "min": 80,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Lie on back with arms extended toward ceiling",
+      "Lift knees to 90 degrees",
+      "Press lower back into floor",
+      "Hold position while maintaining core engagement",
+      "Keep breathing steady",
+      "Hold for desired duration"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/o1OfcM6fxO4AAAAC/workout-working-out.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=g_BYB0R-4Ws",
+      "thumbnailUrl": "https://img.youtube.com/vi/g_BYB0R-4Ws/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Reverse Plank",
+    "category": "strength",
+    "description": "An isometric exercise targeting posterior chain and core",
+    "targetMuscles": [
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "triceps"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Sit on floor with legs extended",
+      "Place hands behind you, fingers pointing forward",
+      "Lift hips to form straight line from head to heels",
+      "Keep body aligned and core engaged",
+      "Hold position while breathing normally",
+      "Avoid letting hips sag"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/ohdQMV-9SrkAAAAC/pamela-pamela-reif.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=44ScXWFaVBs",
+      "thumbnailUrl": "https://img.youtube.com/vi/44ScXWFaVBs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Superman Hold",
+    "category": "strength",
+    "description": "An isometric exercise targeting posterior chain and lower back",
+    "targetMuscles": [
+      "lower back",
+      "glutes",
+      "hamstrings",
+      "shoulders"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -30,
+        "max": -10
+      },
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Lie face down on floor",
+      "Extend arms forward and legs straight",
+      "Lift arms, chest, and legs off ground simultaneously",
+      "Hold position while engaging glutes and lower back",
+      "Keep neck neutral",
+      "Breathe normally"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/kkW0wQNQkh0AAAAC/superman.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=cc6TT5y6aw4",
+      "thumbnailUrl": "https://img.youtube.com/vi/cc6TT5y6aw4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Glute Bridge Hold",
+    "category": "strength",
+    "description": "An isometric glute and core strengthening exercise",
+    "targetMuscles": [
+      "glutes",
+      "hamstrings",
+      "core",
+      "lower back"
+    ],
+    "formRules": {
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 80,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Lie on back with knees bent, feet flat on floor",
+      "Lift hips up by squeezing glutes",
+      "Form straight line from knees to shoulders",
+      "Hold position while engaging glutes and core",
+      "Keep feet flat and core tight",
+      "Breathe normally"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/KWB1fvFlzjgAAAAC/barbell-glute.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=wPM8icPu6H8",
+      "thumbnailUrl": "https://img.youtube.com/vi/wPM8icPu6H8/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Single Leg Glute Bridge Hold",
+    "category": "strength",
+    "description": "An advanced isometric glute exercise with unilateral loading",
+    "targetMuscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "formRules": {
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 80,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Lie on back with one knee bent, foot flat",
+      "Extend other leg straight",
+      "Lift hips by squeezing glutes",
+      "Hold position while keeping hips level",
+      "Engage core to prevent rotation",
+      "Switch legs and repeat"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/6e9R6ktpmjQAAAAC/single-leg-butt-bridge.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=4Y2ZdHCOXok",
+      "thumbnailUrl": "https://img.youtube.com/vi/4Y2ZdHCOXok/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "L-Sit Hold",
+    "category": "strength",
+    "description": "An advanced isometric core and upper body exercise",
+    "targetMuscles": [
+      "core",
+      "hip flexors",
+      "triceps",
+      "shoulders"
+    ],
+    "formRules": {
+      "hipAngle": {
+        "min": 80,
+        "max": 90
+      },
+      "kneeAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Sit on floor or parallel bars",
+      "Place hands beside or behind hips",
+      "Press down and lift body off ground",
+      "Extend legs straight to form L shape",
+      "Hold position while engaging core",
+      "Keep shoulders down and chest up"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/3dNF8-AkEMsAAAAC/working-my-abs-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=W6N27a8uUxs",
+      "thumbnailUrl": "https://img.youtube.com/vi/W6N27a8uUxs/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Wall Handstand Hold",
+    "category": "strength",
+    "description": "An advanced isometric upper body and core exercise",
+    "targetMuscles": [
+      "shoulders",
+      "triceps",
+      "core",
+      "upper back"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start in downward dog facing wall",
+      "Walk feet up wall while walking hands closer",
+      "Form straight line from hands to feet",
+      "Hold position while engaging shoulders and core",
+      "Keep body aligned and breathe normally",
+      "Come down slowly when finished"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/V849xTRau1cAAAAC/hand-stand-balance.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=Y7M-gR2J8Ds",
+      "thumbnailUrl": "https://img.youtube.com/vi/Y7M-gR2J8Ds/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Farmer's Walk",
+    "category": "strength",
+    "description": "An isometric grip and full-body strength exercise",
+    "targetMuscles": [
+      "forearms",
+      "grip",
+      "core",
+      "shoulders",
+      "legs"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 10
+      },
+      "kneeAngle": {
+        "min": 170,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Pick up heavy weights in each hand",
+      "Stand tall with shoulders back",
+      "Walk forward with controlled steps",
+      "Maintain strong grip throughout",
+      "Keep core engaged and back straight",
+      "Walk for desired distance or time"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/MPGfMU7LAigAAAAC/home-workouts-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=Fkzk_RqlYig",
+      "thumbnailUrl": "https://img.youtube.com/vi/Fkzk_RqlYig/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Forearm Plank",
+    "category": "strength",
+    "description": "A variation of plank performed on forearms for increased stability",
+    "targetMuscles": [
+      "core",
+      "shoulders",
+      "glutes"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start in plank position on forearms",
+      "Keep elbows directly under shoulders",
+      "Form straight line from head to heels",
+      "Engage core and glutes",
+      "Hold position while breathing normally",
+      "Avoid letting hips sag or rise"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/73Sld1d9MbkAAAAC/plank-workout.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "High Plank Hold",
+    "category": "strength",
+    "description": "An isometric core exercise performed in push-up position",
+    "targetMuscles": [
+      "core",
+      "shoulders",
+      "triceps",
+      "glutes"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start in push-up position",
+      "Place hands directly under shoulders",
+      "Form straight line from head to heels",
+      "Engage core, glutes, and shoulders",
+      "Hold position while breathing steadily",
+      "Keep body aligned throughout"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/FMpev4Dz3RMAAAAC/plank-to-squat-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=pSHjTRCQxIw",
+      "thumbnailUrl": "https://img.youtube.com/vi/pSHjTRCQxIw/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Jump Squat",
+    "category": "cardio",
+    "description": "An explosive plyometric exercise combining squat and vertical jump",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Start in squat position with feet shoulder-width apart",
+      "Lower into squat by bending knees and hips",
+      "Explosively jump up as high as possible",
+      "Swing arms upward for momentum",
+      "Land softly on balls of feet",
+      "Immediately descend into next squat"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M",
+      "thumbnailUrl": "https://img.youtube.com/vi/CVaEhXotL7M/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Broad Jump",
+    "category": "cardio",
+    "description": "A horizontal plyometric jump targeting lower body power",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "hamstrings"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -15,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Swing arms back and bend knees",
+      "Explosively jump forward as far as possible",
+      "Land softly with both feet",
+      "Absorb impact by bending knees",
+      "Stand up and reset for next jump"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/73NJk5DQjGwAAAAC/exercise-fitness.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
+      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Tuck Jump",
+    "category": "cardio",
+    "description": "An explosive vertical jump with knees pulled to chest",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "hip flexors",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Bend knees slightly and swing arms back",
+      "Explosively jump up as high as possible",
+      "Pull knees toward chest in mid-air",
+      "Land softly on balls of feet",
+      "Immediately prepare for next jump"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M",
+      "thumbnailUrl": "https://img.youtube.com/vi/CVaEhXotL7M/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Single Leg Hop",
+    "category": "cardio",
+    "description": "A unilateral plyometric exercise for single-leg power and stability",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand on one leg with slight knee bend",
+      "Swing arms back for momentum",
+      "Hop forward or in place on single leg",
+      "Land softly on ball of foot",
+      "Absorb impact and immediately hop again",
+      "Switch legs and repeat"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/rZ5I5KophgwAAAAC/exercise-workout.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
+      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Lateral Bound",
+    "category": "cardio",
+    "description": "A side-to-side plyometric exercise targeting lateral power",
+    "targetMuscles": [
+      "glutes",
+      "quadriceps",
+      "calves",
+      "hip abductors"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand on one leg with slight bend",
+      "Push off explosively to side",
+      "Land on opposite leg",
+      "Immediately bound back to other side",
+      "Keep core engaged throughout",
+      "Maintain controlled rhythm"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/wEitxLHgDYMAAAAC/workout-working-out.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
+      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Depth Jump",
+    "category": "cardio",
+    "description": "An advanced plyometric exercise involving drop and rebound jump",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand on box or platform",
+      "Step off and land on ground",
+      "Immediately upon landing, explode upward",
+      "Jump as high as possible",
+      "Land softly and reset",
+      "Focus on quick ground contact time"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/5-hwzJ8VL2EAAAAC/jump-rope-sheamus.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
+      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Plyometric Push-up",
+    "category": "cardio",
+    "description": "An explosive upper body plyometric exercise",
+    "targetMuscles": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Start in push-up position",
+      "Lower body with control",
+      "Explosively push up so hands leave ground",
+      "Land softly and immediately lower again",
+      "Keep body in straight line",
+      "Maintain controlled rhythm"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/5c3eLTAGPF8AAAAC/push-ups-rakul-preet.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4",
+      "thumbnailUrl": "https://img.youtube.com/vi/IODxDxX7oi4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Skater Jump",
+    "category": "cardio",
+    "description": "A lateral plyometric exercise mimicking speed skating movement",
+    "targetMuscles": [
+      "glutes",
+      "quadriceps",
+      "calves",
+      "hip abductors",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -15,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand on one leg with slight bend",
+      "Jump laterally to opposite side",
+      "Land on opposite leg with trailing leg behind",
+      "Immediately jump back to other side",
+      "Swing arms for momentum and balance",
+      "Maintain low center of gravity"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/AMXHw4N4NpoAAAAC/jump-goal.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM",
+      "thumbnailUrl": "https://img.youtube.com/vi/UpH7rm0cYbM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Split Jump",
+    "category": "cardio",
+    "description": "An explosive plyometric exercise performed in lunge position",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Start in lunge position",
+      "Explosively jump up and switch legs mid-air",
+      "Land in opposite lunge position",
+      "Immediately jump again and switch",
+      "Keep torso upright throughout",
+      "Land softly with controlled descent"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
+      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Clapping Push-up",
+    "category": "cardio",
+    "description": "An advanced plyometric push-up variation with clap in mid-air",
+    "targetMuscles": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Start in push-up position",
+      "Lower body with control",
+      "Explosively push up with maximum force",
+      "Clap hands together in mid-air",
+      "Land softly on hands",
+      "Immediately prepare for next repetition"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/EbRmSXrs5JQAAAAC/clap-pushups-stephen-farrelly.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4",
+      "thumbnailUrl": "https://img.youtube.com/vi/IODxDxX7oi4/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Single Leg Box Jump",
+    "category": "cardio",
+    "description": "An advanced unilateral plyometric exercise",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand on one leg facing box",
+      "Bend knee and swing arms back",
+      "Explosively jump onto box with single leg",
+      "Land softly on box",
+      "Step down and reset",
+      "Switch legs and repeat"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/5-hwzJ8VL2EAAAAC/jump-rope-sheamus.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=up1WZgNG1LA",
+      "thumbnailUrl": "https://img.youtube.com/vi/up1WZgNG1LA/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Ankle Hops",
+    "category": "cardio",
+    "description": "A low-impact plyometric exercise focusing on calf power",
+    "targetMuscles": [
+      "calves",
+      "ankles",
+      "core"
+    ],
+    "formRules": {
+      "ankleAngle": {
+        "min": 90,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "hipAngle": {
+        "min": 170,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Keep legs relatively straight",
+      "Hop up using only ankles and calves",
+      "Minimal knee bend",
+      "Land on balls of feet",
+      "Maintain quick, rhythmic hops"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
+      "thumbnailUrl": "https://img.youtube.com/vi/-M4-G8p8fmc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Star Jump",
+    "category": "cardio",
+    "description": "A full-body explosive plyometric exercise",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "shoulders",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start in squat position",
+      "Explosively jump up",
+      "Spread legs and arms wide in mid-air",
+      "Form star shape with body",
+      "Land softly with feet together",
+      "Immediately return to squat position"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/LQ66sZzkA68AAAAC/jumping-jacks-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=UpH7rm0cYbM",
+      "thumbnailUrl": "https://img.youtube.com/vi/UpH7rm0cYbM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Pike Jump",
+    "category": "cardio",
+    "description": "An explosive plyometric exercise with pike position in mid-air",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "calves",
+      "core",
+      "hip flexors"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Bend knees and swing arms back",
+      "Explosively jump up",
+      "Bring knees toward chest while reaching for toes",
+      "Form pike position in mid-air",
+      "Land softly and reset"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "none"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/cWximNDZw7QAAAAC/no-jumping-low-impact.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=CVaEhXotL7M",
+      "thumbnailUrl": "https://img.youtube.com/vi/CVaEhXotL7M/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Hang Clean",
+    "category": "strength",
+    "description": "An explosive Olympic lift variation starting from hang position",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "traps",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -20,
+        "max": 10
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start with bar at mid-thigh, feet hip-width apart",
+      "Keep back straight and chest up",
+      "Explosively extend hips and knees",
+      "Shrug shoulders and pull bar up",
+      "Drop under bar and catch in front rack position",
+      "Stand up with bar on shoulders",
+      "Lower bar with control"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/K6mJpEVYP3MAAAAC/full-body-exercise-yoga.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=0x7k3SYn4vY",
+      "thumbnailUrl": "https://img.youtube.com/vi/0x7k3SYn4vY/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Power Clean",
+    "category": "strength",
+    "description": "An explosive full-body Olympic lift from floor to shoulders",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "traps",
+      "core",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -30,
+        "max": 10
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Start with bar on floor, feet hip-width apart",
+      "Bend at hips and knees to grip bar",
+      "Keep back straight and chest up",
+      "Drive through legs and extend hips explosively",
+      "Shrug and pull bar up with arms",
+      "Drop under bar and catch in front rack position",
+      "Stand up with bar on shoulders"
+    ],
+    "difficulty": "advanced",
+    "equipment": [
+      "barbell"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/DxkolW-N_pYAAAAC/workout-dumpel.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=0x7k3SYn4vY",
+      "thumbnailUrl": "https://img.youtube.com/vi/0x7k3SYn4vY/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "category": "strength",
+    "description": "A vertical pressing movement for shoulders using dumbbells",
+    "targetMuscles": [
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells at shoulder height",
+      "Press dumbbells overhead until arms are extended",
+      "Keep core engaged and back straight",
+      "Lower with control to starting position",
+      "Maintain neutral wrist position"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/T_vqvD5qG-YAAAAC/shoulder-press-seated-shoulder-press.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
+      "thumbnailUrl": "https://img.youtube.com/vi/_oyxCn2iSjU/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "category": "strength",
+    "description": "A chest exercise using dumbbells for greater range of motion",
+    "targetMuscles": [
+      "chest",
+      "shoulders",
+      "triceps"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Lie on bench with feet flat on floor",
+      "Hold dumbbells at chest level",
+      "Press dumbbells up until arms are extended",
+      "Lower with control to starting position",
+      "Keep core engaged throughout",
+      "Maintain control of weights"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/Tb1J2ykmJlkAAAAC/chestday-chestworkout.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
+      "thumbnailUrl": "https://img.youtube.com/vi/rT7DgCr-3pg/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Squat",
+    "category": "strength",
+    "description": "A lower body exercise using dumbbells for added resistance",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Hold dumbbells at sides or at shoulders",
+      "Lower by bending knees and hips",
+      "Keep back straight and chest up",
+      "Descend until thighs are parallel to ground",
+      "Drive through heels to return to standing"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/5z4q0v91sNYAAAAC/squats-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=YaXPRqUwItQ",
+      "thumbnailUrl": "https://img.youtube.com/vi/YaXPRqUwItQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Lunge",
+    "category": "strength",
+    "description": "A unilateral lower body exercise with dumbbells",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells at sides",
+      "Step forward with one leg",
+      "Lower until both knees are at 90 degrees",
+      "Push back to starting position",
+      "Repeat with other leg"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/KOkn9T5BiooAAAAC/curtsylunge-lunge.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
+      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Romanian Deadlift",
+    "category": "strength",
+    "description": "A hip-hinge movement using dumbbells to target posterior chain",
+    "targetMuscles": [
+      "hamstrings",
+      "glutes",
+      "lower back",
+      "core"
+    ],
+    "formRules": {
+      "backAngle": {
+        "min": -30,
+        "max": 10
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "kneeAngle": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells in front of thighs",
+      "Hinge at hips while keeping knees slightly bent",
+      "Lower dumbbells along legs",
+      "Feel stretch in hamstrings",
+      "Return to standing by extending hips"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/VSY6K8y4zEIAAAAC/romanian-deadlift-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=JCXUYuzwNrM",
+      "thumbnailUrl": "https://img.youtube.com/vi/JCXUYuzwNrM/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Fly",
+    "category": "strength",
+    "description": "An isolation exercise for chest muscles using dumbbells",
+    "targetMuscles": [
+      "chest",
+      "shoulders"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 150,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Lie on bench with feet flat on floor",
+      "Hold dumbbells above chest with slight elbow bend",
+      "Lower dumbbells in wide arc until chest stretch",
+      "Keep slight bend in elbows throughout",
+      "Bring dumbbells back together above chest",
+      "Squeeze chest at top"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/ClpO4TlEYhQAAAAC/pulling-upasana-kamineni-konidela.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=e1Xa2gZ3cYk",
+      "thumbnailUrl": "https://img.youtube.com/vi/e1Xa2gZ3cYk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Lateral Raise",
+    "category": "strength",
+    "description": "An isolation exercise targeting lateral deltoids",
+    "targetMuscles": [
+      "shoulders",
+      "traps"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "elbowAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells at sides with palms facing in",
+      "Raise dumbbells out to sides until shoulder height",
+      "Keep slight bend in elbows",
+      "Lower with control to starting position",
+      "Avoid swinging or using momentum"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/cy46UbnfUrkAAAAC/eleva%C3%A7%C3%A3o-lateral-hateres.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo",
+      "thumbnailUrl": "https://img.youtube.com/vi/3VcKaXpzqRo/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Front Raise",
+    "category": "strength",
+    "description": "An isolation exercise targeting anterior deltoids",
+    "targetMuscles": [
+      "shoulders",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "elbowAngle": {
+        "min": 170,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells in front of thighs",
+      "Raise dumbbells forward until shoulder height",
+      "Keep slight bend in elbows",
+      "Lower with control to starting position",
+      "Maintain core engagement"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/vFLnrUUJtRQAAAAC/dumbells-front-raise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo",
+      "thumbnailUrl": "https://img.youtube.com/vi/3VcKaXpzqRo/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Tricep Extension",
+    "category": "strength",
+    "description": "An isolation exercise targeting triceps",
+    "targetMuscles": [
+      "triceps"
+    ],
+    "formRules": {
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand or sit with feet flat",
+      "Hold dumbbell overhead with both hands",
+      "Lower dumbbell behind head by bending elbows",
+      "Keep elbows close to head",
+      "Extend arms to return to starting position",
+      "Squeeze triceps at top"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/V3J-mg9gH0kAAAAC/seated-dumbbell-triceps-extension.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=6kALZikXxLc",
+      "thumbnailUrl": "https://img.youtube.com/vi/6kALZikXxLc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Hammer Curl",
+    "category": "strength",
+    "description": "A bicep exercise with neutral grip targeting brachialis",
+    "targetMuscles": [
+      "biceps",
+      "brachialis",
+      "forearms"
+    ],
+    "formRules": {
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 10
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells with neutral grip (palms facing in)",
+      "Curl dumbbells to shoulders",
+      "Keep elbows at sides throughout",
+      "Lower with control to starting position",
+      "Maintain controlled movement"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/bD-xqk220MMAAAAC/miodek.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo",
+      "thumbnailUrl": "https://img.youtube.com/vi/ykJmrZ5v0Oo/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Goblet Squat",
+    "category": "strength",
+    "description": "A front-loaded squat variation using single dumbbell",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "core",
+      "upper back"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Hold dumbbell vertically at chest level",
+      "Lower by bending knees and hips",
+      "Keep torso upright and chest up",
+      "Descend until thighs are parallel to ground",
+      "Drive through heels to return to standing"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/NH_OirQp6OsAAAAC/squats-sheamus.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=YaXPRqUwItQ",
+      "thumbnailUrl": "https://img.youtube.com/vi/YaXPRqUwItQ/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Step-up",
+    "category": "strength",
+    "description": "A unilateral lower body exercise using dumbbells and platform",
+    "targetMuscles": [
+      "quadriceps",
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "formRules": {
+      "kneeAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "hipAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -10,
+        "max": 10
+      }
+    },
+    "instructions": [
+      "Stand facing box or platform",
+      "Hold dumbbells at sides",
+      "Step up with one foot onto platform",
+      "Drive through heel to stand fully on platform",
+      "Step down with control",
+      "Repeat with other leg"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/W3zfuHShZlgAAAAC/stair-master-exercise.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=QOVaHwm-Q6U",
+      "thumbnailUrl": "https://img.youtube.com/vi/QOVaHwm-Q6U/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Pullover",
+    "category": "strength",
+    "description": "An exercise targeting chest, lats, and serratus anterior",
+    "targetMuscles": [
+      "chest",
+      "lats",
+      "serratus anterior",
+      "triceps"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 150,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Lie on bench with only upper back supported",
+      "Hold dumbbell with both hands above chest",
+      "Lower dumbbell behind head in arc",
+      "Feel stretch in chest and lats",
+      "Pull dumbbell back to starting position",
+      "Keep slight bend in elbows"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/TPJawIY5nMoAAAAC/db-pullover-dumbbell-workout.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=e1Xa2gZ3cYk",
+      "thumbnailUrl": "https://img.youtube.com/vi/e1Xa2gZ3cYk/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Shrug",
+    "category": "strength",
+    "description": "An isolation exercise targeting trapezius muscles",
+    "targetMuscles": [
+      "traps",
+      "shoulders"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 10
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      },
+      "elbowAngle": {
+        "min": 170,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells at sides with palms facing in",
+      "Lift shoulders straight up toward ears",
+      "Hold at top for a moment",
+      "Lower with control to starting position",
+      "Avoid rolling shoulders"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/ZFGhZdaLtcQAAAAC/exercise-karna-sevengers.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo",
+      "thumbnailUrl": "https://img.youtube.com/vi/3VcKaXpzqRo/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Reverse Fly",
+    "category": "strength",
+    "description": "An isolation exercise targeting rear deltoids and rhomboids",
+    "targetMuscles": [
+      "rear delts",
+      "rhomboids",
+      "traps"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 90
+      },
+      "backAngle": {
+        "min": -45,
+        "max": -15
+      },
+      "elbowAngle": {
+        "min": 150,
+        "max": 180
+      }
+    },
+    "instructions": [
+      "Bend over with slight knee bend",
+      "Hold dumbbells with palms facing each other",
+      "Raise dumbbells out to sides",
+      "Squeeze rear delts and rhomboids",
+      "Lower with control to starting position",
+      "Keep slight bend in elbows"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/HTvjufujuJAAAAAC/rear-raise-rear.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=auBLPXO8Fww",
+      "thumbnailUrl": "https://img.youtube.com/vi/auBLPXO8Fww/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Calf Raise",
+    "category": "strength",
+    "description": "An isolation exercise for calf muscles using dumbbells",
+    "targetMuscles": [
+      "calves"
+    ],
+    "formRules": {
+      "ankleAngle": {
+        "min": 90,
+        "max": 180
+      },
+      "kneeAngle": {
+        "min": 0,
+        "max": 10
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Hold dumbbells at sides",
+      "Rise up onto balls of feet",
+      "Hold at top for a moment",
+      "Lower with control to starting position",
+      "Repeat for desired reps"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/TBOR9mdMct4AAAAC/leg-raises-crunches.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc",
+      "thumbnailUrl": "https://img.youtube.com/vi/-M4-G8p8fmc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Overhead Tricep Extension",
+    "category": "strength",
+    "description": "A single-arm tricep isolation exercise",
+    "targetMuscles": [
+      "triceps"
+    ],
+    "formRules": {
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand or sit with feet flat",
+      "Hold dumbbell in one hand overhead",
+      "Lower dumbbell behind head by bending elbow",
+      "Keep elbow close to head and pointing forward",
+      "Extend arm to return to starting position",
+      "Switch arms and repeat"
+    ],
+    "difficulty": "beginner",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/V3J-mg9gH0kAAAAC/seated-dumbbell-triceps-extension.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=6kALZikXxLc",
+      "thumbnailUrl": "https://img.youtube.com/vi/6kALZikXxLc/maxresdefault.jpg"
+    }
+  },
+  {
+    "name": "Dumbbell Arnold Press",
+    "category": "strength",
+    "description": "A shoulder exercise combining rotation with overhead press",
+    "targetMuscles": [
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "formRules": {
+      "shoulderAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "elbowAngle": {
+        "min": 0,
+        "max": 180
+      },
+      "backAngle": {
+        "min": -5,
+        "max": 5
+      }
+    },
+    "instructions": [
+      "Stand with feet hip-width apart",
+      "Start with dumbbells at chest, palms facing you",
+      "Rotate and press dumbbells overhead",
+      "End with palms facing forward at top",
+      "Reverse motion to return to start",
+      "Keep core engaged throughout"
+    ],
+    "difficulty": "intermediate",
+    "equipment": [
+      "dumbbells"
+    ],
+    "isActive": true,
+    "demonstration": {
+      "gifUrl": "https://media.tenor.com/sJ1xs4-DxfAAAAAC/landmine-press-stephen-farrelly.gif",
+      "videoUrl": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
+      "thumbnailUrl": "https://img.youtube.com/vi/_oyxCn2iSjU/maxresdefault.jpg"
+    }
+  }
+]

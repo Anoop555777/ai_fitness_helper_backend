@@ -1,0 +1,481 @@
+[
+  {
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 28,
+      "height": 175,
+      "weight": 75,
+      "fitnessLevel": "intermediate",
+      "bio": "Fitness enthusiast passionate about strength training"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "jane_smith",
+    "email": "jane.smith@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 32,
+      "height": 165,
+      "weight": 60,
+      "fitnessLevel": "beginner",
+      "bio": "New to fitness, looking to improve form"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "admin_user",
+    "email": "admin@gmail.com",
+    "password": "Admin@123",
+    "provider": "local",
+    "profile": {
+      "firstName": "Admin",
+      "lastName": "User",
+      "age": 35,
+      "height": 180,
+      "weight": 80,
+      "fitnessLevel": "advanced"
+    },
+    "role": "admin",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "mike_johnson",
+    "email": "mike.johnson@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Mike",
+      "lastName": "Johnson",
+      "age": 25,
+      "height": 178,
+      "weight": 82,
+      "fitnessLevel": "advanced",
+      "bio": "Competitive powerlifter"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "sarah_williams",
+    "email": "sarah.williams@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Sarah",
+      "lastName": "Williams",
+      "age": 29,
+      "height": 170,
+      "weight": 65,
+      "fitnessLevel": "intermediate",
+      "bio": "Yoga and strength training enthusiast"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "david_brown",
+    "email": "david.brown@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "David",
+      "lastName": "Brown",
+      "age": 42,
+      "height": 185,
+      "weight": 90,
+      "fitnessLevel": "beginner",
+      "bio": "Getting back into fitness after a long break"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "emily_davis",
+    "email": "emily.davis@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "age": 26,
+      "height": 162,
+      "weight": 58,
+      "fitnessLevel": "intermediate",
+      "bio": "CrossFit athlete"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "chris_miller",
+    "email": "chris.miller@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Chris",
+      "lastName": "Miller",
+      "age": 31,
+      "height": 175,
+      "weight": 78,
+      "fitnessLevel": "advanced",
+      "bio": "Bodybuilder and fitness coach"
+    },
+    "role": "premium",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "lisa_wilson",
+    "email": "lisa.wilson@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Lisa",
+      "lastName": "Wilson",
+      "age": 34,
+      "height": 168,
+      "weight": 62,
+      "fitnessLevel": "beginner",
+      "bio": "Starting my fitness journey"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "robert_taylor",
+    "email": "robert.taylor@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Robert",
+      "lastName": "Taylor",
+      "age": 38,
+      "height": 182,
+      "weight": 88,
+      "fitnessLevel": "intermediate",
+      "bio": "Marathon runner"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "amanda_anderson",
+    "email": "amanda.anderson@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Amanda",
+      "lastName": "Anderson",
+      "age": 27,
+      "height": 165,
+      "weight": 59,
+      "fitnessLevel": "intermediate",
+      "bio": "Pilates and barre instructor"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "james_thomas",
+    "email": "james.thomas@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "James",
+      "lastName": "Thomas",
+      "age": 33,
+      "height": 180,
+      "weight": 85,
+      "fitnessLevel": "advanced",
+      "bio": "Olympic weightlifting coach"
+    },
+    "role": "premium",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "jennifer_martinez",
+    "email": "jennifer.martinez@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Jennifer",
+      "lastName": "Martinez",
+      "age": 30,
+      "height": 163,
+      "weight": 61,
+      "fitnessLevel": "beginner",
+      "bio": "New mom getting back in shape"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "william_garcia",
+    "email": "william.garcia@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "William",
+      "lastName": "Garcia",
+      "age": 36,
+      "height": 177,
+      "weight": 83,
+      "fitnessLevel": "intermediate",
+      "bio": "Functional fitness enthusiast"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "patricia_rodriguez",
+    "email": "patricia.rodriguez@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Patricia",
+      "lastName": "Rodriguez",
+      "age": 28,
+      "height": 167,
+      "weight": 64,
+      "fitnessLevel": "intermediate",
+      "bio": "Dance fitness instructor"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "richard_lee",
+    "email": "richard.lee@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Richard",
+      "lastName": "Lee",
+      "age": 40,
+      "height": 175,
+      "weight": 77,
+      "fitnessLevel": "beginner",
+      "bio": "Desk worker trying to stay active"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "linda_white",
+    "email": "linda.white@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Linda",
+      "lastName": "White",
+      "age": 45,
+      "height": 170,
+      "weight": 68,
+      "fitnessLevel": "intermediate",
+      "bio": "Senior fitness advocate"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "joseph_harris",
+    "email": "joseph.harris@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Joseph",
+      "lastName": "Harris",
+      "age": 29,
+      "height": 183,
+      "weight": 86,
+      "fitnessLevel": "advanced",
+      "bio": "Strongman competitor"
+    },
+    "role": "premium",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "susan_clark",
+    "email": "susan.clark@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Susan",
+      "lastName": "Clark",
+      "age": 31,
+      "height": 164,
+      "weight": 60,
+      "fitnessLevel": "beginner",
+      "bio": "Yoga beginner"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  },
+  {
+    "username": "thomas_lewis",
+    "email": "thomas.lewis@example.com",
+    "password": "Test123!@#",
+    "provider": "local",
+    "profile": {
+      "firstName": "Thomas",
+      "lastName": "Lewis",
+      "age": 37,
+      "height": 179,
+      "weight": 81,
+      "fitnessLevel": "intermediate",
+      "bio": "Triathlon athlete"
+    },
+    "role": "user",
+    "isActive": true,
+    "isEmailVerified": true,
+    "stats": {
+      "totalSessions": 0,
+      "totalDuration": 0,
+      "averageScore": 0,
+      "streak": 0
+    }
+  }
+]

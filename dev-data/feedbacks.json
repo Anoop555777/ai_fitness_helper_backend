@@ -1,0 +1,371 @@
+[
+  {
+    "sessionId": "{{SESSION_ID_1}}",
+    "type": "form_error",
+    "severity": "warning",
+    "message": "Slight forward lean detected during squat descent",
+    "suggestion": "Focus on keeping your chest up and core engaged throughout the movement",
+    "timestamp": 5,
+    "keypoints": ["left_shoulder", "right_shoulder"],
+    "aiGenerated": false,
+    "confidence": 0.85,
+    "metadata": {
+      "angleValue": 12,
+      "threshold": 10,
+      "frameNumber": 15,
+      "ruleId": "back_angle_rule_001"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_1}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Knee tracking is good, keep knees aligned with toes",
+    "suggestion": "Continue maintaining proper knee alignment",
+    "timestamp": 8,
+    "keypoints": ["left_knee", "right_knee"],
+    "aiGenerated": true,
+    "confidence": 0.92,
+    "metadata": {
+      "angleValue": 88,
+      "threshold": 90,
+      "frameNumber": 24
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_2}}",
+    "type": "form_error",
+    "severity": "error",
+    "message": "Hips sagging during push-up",
+    "suggestion": "Engage your core and keep your body in a straight line from head to heels",
+    "timestamp": 3,
+    "keypoints": ["left_hip", "right_hip"],
+    "aiGenerated": false,
+    "confidence": 0.88,
+    "metadata": {
+      "angleValue": -8,
+      "threshold": -5,
+      "frameNumber": 9,
+      "ruleId": "back_angle_rule_002"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_2}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Good arm extension at the top",
+    "suggestion": "Keep up the great work!",
+    "timestamp": 10,
+    "keypoints": ["left_elbow", "right_elbow"],
+    "aiGenerated": true,
+    "confidence": 0.95,
+    "metadata": {
+      "angleValue": 180,
+      "frameNumber": 30
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_3}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Excellent deadlift form throughout",
+    "suggestion": "Perfect technique, maintain this form",
+    "timestamp": 15,
+    "keypoints": [],
+    "aiGenerated": true,
+    "confidence": 0.96,
+    "metadata": {
+      "angleValue": 18,
+      "frameNumber": 45
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_4}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Plank form is solid, try to hold longer",
+    "suggestion": "You're maintaining good alignment, challenge yourself with longer holds",
+    "timestamp": 20,
+    "keypoints": ["left_shoulder", "right_shoulder", "left_hip", "right_hip"],
+    "aiGenerated": true,
+    "confidence": 0.90,
+    "metadata": {
+      "angleValue": 2,
+      "frameNumber": 60
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_5}}",
+    "type": "form_error",
+    "severity": "warning",
+    "message": "Front knee going past toes in lunge",
+    "suggestion": "Keep your front knee aligned over your ankle, not past your toes",
+    "timestamp": 7,
+    "keypoints": ["left_knee", "right_knee"],
+    "aiGenerated": false,
+    "confidence": 0.87,
+    "metadata": {
+      "angleValue": 95,
+      "threshold": 90,
+      "frameNumber": 21,
+      "ruleId": "knee_angle_rule_001"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_6}}",
+    "type": "form_error",
+    "severity": "error",
+    "message": "Bar path not straight during bench press",
+    "suggestion": "Focus on pressing the bar in a straight line, avoid arching too much",
+    "timestamp": 12,
+    "keypoints": ["left_shoulder", "right_shoulder"],
+    "aiGenerated": false,
+    "confidence": 0.83,
+    "metadata": {
+      "angleValue": 15,
+      "threshold": 10,
+      "frameNumber": 36,
+      "ruleId": "back_angle_rule_003"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_7}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Good full range of motion on pull-ups",
+    "suggestion": "Excellent work, continue focusing on controlled movements",
+    "timestamp": 5,
+    "keypoints": ["left_shoulder", "right_shoulder"],
+    "aiGenerated": true,
+    "confidence": 0.91,
+    "metadata": {
+      "angleValue": 0,
+      "frameNumber": 15
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_8}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Perfect overhead press form",
+    "suggestion": "Outstanding technique, keep it up!",
+    "timestamp": 8,
+    "keypoints": ["left_shoulder", "right_shoulder"],
+    "aiGenerated": true,
+    "confidence": 0.97,
+    "metadata": {
+      "angleValue": 180,
+      "frameNumber": 24
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_9}}",
+    "type": "form_error",
+    "severity": "warning",
+    "message": "Slight rounding of lower back in Romanian deadlift",
+    "suggestion": "Maintain a neutral spine throughout the movement",
+    "timestamp": 10,
+    "keypoints": ["left_hip", "right_hip"],
+    "aiGenerated": false,
+    "confidence": 0.86,
+    "metadata": {
+      "angleValue": -28,
+      "threshold": -25,
+      "frameNumber": 30,
+      "ruleId": "back_angle_rule_004"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_10}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Good rowing form, focus on squeezing at the top",
+    "suggestion": "Pull your elbows back more to maximize back muscle engagement",
+    "timestamp": 6,
+    "keypoints": ["left_shoulder", "right_shoulder"],
+    "aiGenerated": true,
+    "confidence": 0.89,
+    "metadata": {
+      "angleValue": -25,
+      "frameNumber": 18
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_11}}",
+    "type": "form_error",
+    "severity": "error",
+    "message": "Landing too hard on burpees",
+    "suggestion": "Land softly to reduce impact on joints, focus on controlled movements",
+    "timestamp": 4,
+    "keypoints": ["left_knee", "right_knee"],
+    "aiGenerated": false,
+    "confidence": 0.84,
+    "metadata": {
+      "angleValue": 95,
+      "threshold": 90,
+      "frameNumber": 12,
+      "ruleId": "knee_angle_rule_002"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_12}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Excellent core engagement in mountain climbers",
+    "suggestion": "Great form, you're maintaining proper alignment",
+    "timestamp": 15,
+    "keypoints": ["left_hip", "right_hip"],
+    "aiGenerated": true,
+    "confidence": 0.93,
+    "metadata": {
+      "angleValue": 2,
+      "frameNumber": 45
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_13}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Good jumping jacks rhythm",
+    "suggestion": "Try to increase the range of motion in your arms and legs",
+    "timestamp": 2,
+    "keypoints": ["left_shoulder", "right_shoulder", "left_knee", "right_knee"],
+    "aiGenerated": true,
+    "confidence": 0.88,
+    "metadata": {
+      "angleValue": 175,
+      "frameNumber": 6
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_14}}",
+    "type": "form_error",
+    "severity": "warning",
+    "message": "Slight swinging during bicep curls",
+    "suggestion": "Keep your elbows stationary and focus on isolating the biceps",
+    "timestamp": 8,
+    "keypoints": ["left_elbow", "right_elbow"],
+    "aiGenerated": false,
+    "confidence": 0.82,
+    "metadata": {
+      "angleValue": 8,
+      "threshold": 5,
+      "frameNumber": 24,
+      "ruleId": "shoulder_angle_rule_001"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_15}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Good tricep dip depth",
+    "suggestion": "Try to go deeper if comfortable, but maintain control",
+    "timestamp": 5,
+    "keypoints": ["left_elbow", "right_elbow"],
+    "aiGenerated": true,
+    "confidence": 0.90,
+    "metadata": {
+      "angleValue": 85,
+      "frameNumber": 15
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_16}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Excellent leg press form",
+    "suggestion": "Perfect technique, great depth and control",
+    "timestamp": 20,
+    "keypoints": ["left_knee", "right_knee"],
+    "aiGenerated": true,
+    "confidence": 0.94,
+    "metadata": {
+      "angleValue": 90,
+      "frameNumber": 60
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_17}}",
+    "type": "form_error",
+    "severity": "warning",
+    "message": "Leaning back too far in Russian twist",
+    "suggestion": "Maintain a slight lean, focus on rotation from the core",
+    "timestamp": 10,
+    "keypoints": ["left_hip", "right_hip"],
+    "aiGenerated": false,
+    "confidence": 0.85,
+    "metadata": {
+      "angleValue": -42,
+      "threshold": -40,
+      "frameNumber": 30,
+      "ruleId": "back_angle_rule_005"
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_18}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Perfect hip thrust form",
+    "suggestion": "Outstanding glute activation and form!",
+    "timestamp": 15,
+    "keypoints": ["left_hip", "right_hip"],
+    "aiGenerated": true,
+    "confidence": 0.98,
+    "metadata": {
+      "angleValue": 180,
+      "frameNumber": 45
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_19}}",
+    "type": "improvement",
+    "severity": "info",
+    "message": "Good side plank alignment",
+    "suggestion": "Try holding for longer durations to build endurance",
+    "timestamp": 12,
+    "keypoints": ["left_shoulder", "right_shoulder"],
+    "aiGenerated": true,
+    "confidence": 0.91,
+    "metadata": {
+      "angleValue": 2,
+      "frameNumber": 36
+    },
+    "isResolved": false
+  },
+  {
+    "sessionId": "{{SESSION_ID_20}}",
+    "type": "encouragement",
+    "severity": "success",
+    "message": "Excellent box jump technique",
+    "suggestion": "Great explosive power and landing control!",
+    "timestamp": 3,
+    "keypoints": ["left_knee", "right_knee"],
+    "aiGenerated": true,
+    "confidence": 0.95,
+    "metadata": {
+      "angleValue": 90,
+      "frameNumber": 9
+    },
+    "isResolved": false
+  }
+]

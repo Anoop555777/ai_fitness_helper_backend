@@ -1,0 +1,287 @@
+[
+  {
+    "sessionId": "{{SESSION_ID_1}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.95},
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.93},
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.88},
+      {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.89}
+    ],
+    "angles": {"kneeAngle": 45, "hipAngle": 60, "backAngle": 5},
+    "poseModel": "movenet",
+    "quality": 0.91,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_2}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "nose", "x": 0.5, "y": 0.25, "confidence": 0.94},
+      {"name": "left_shoulder", "x": 0.4, "y": 0.35, "confidence": 0.91},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.35, "confidence": 0.92},
+      {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.90}
+    ],
+    "angles": {"shoulderAngle": 170, "backAngle": 2, "elbowAngle": 90},
+    "poseModel": "movenet",
+    "quality": 0.89,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_3}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90},
+      {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.91},
+      {"name": "left_knee", "x": 0.45, "y": 0.75, "confidence": 0.88},
+      {"name": "right_knee", "x": 0.55, "y": 0.75, "confidence": 0.89}
+    ],
+    "angles": {"backAngle": 15, "hipAngle": 75, "kneeAngle": 25},
+    "poseModel": "movenet",
+    "quality": 0.92,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_4}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.95},
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.94},
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90}
+    ],
+    "angles": {"backAngle": 3, "shoulderAngle": 175},
+    "poseModel": "movenet",
+    "quality": 0.90,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_5}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89},
+      {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.90},
+      {"name": "left_ankle", "x": 0.45, "y": 0.85, "confidence": 0.87}
+    ],
+    "angles": {"kneeAngle": 88, "backAngle": 4},
+    "poseModel": "movenet",
+    "quality": 0.88,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_6}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.93},
+      {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.91}
+    ],
+    "angles": {"shoulderAngle": 175, "elbowAngle": 45},
+    "poseModel": "movenet",
+    "quality": 0.87,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_7}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.91},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.92},
+      {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.90}
+    ],
+    "angles": {"shoulderAngle": 0, "elbowAngle": 180},
+    "poseModel": "movenet",
+    "quality": 0.90,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_8}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.94},
+      {"name": "left_elbow", "x": 0.4, "y": 0.5, "confidence": 0.92}
+    ],
+    "angles": {"shoulderAngle": 180, "backAngle": 2},
+    "poseModel": "movenet",
+    "quality": 0.93,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_9}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90},
+      {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.91},
+      {"name": "left_knee", "x": 0.45, "y": 0.75, "confidence": 0.88}
+    ],
+    "angles": {"backAngle": -25, "hipAngle": 80, "kneeAngle": 15},
+    "poseModel": "movenet",
+    "quality": 0.89,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_10}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_shoulder", "x": 0.4, "y": 0.45, "confidence": 0.92},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.45, "confidence": 0.93},
+      {"name": "left_elbow", "x": 0.35, "y": 0.55, "confidence": 0.91}
+    ],
+    "angles": {"backAngle": -30, "shoulderAngle": 90},
+    "poseModel": "movenet",
+    "quality": 0.88,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_11}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.94},
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.88},
+      {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.89}
+    ],
+    "angles": {"kneeAngle": 90, "hipAngle": 90, "backAngle": 5},
+    "poseModel": "movenet",
+    "quality": 0.87,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_12}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.95},
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90},
+      {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.91}
+    ],
+    "angles": {"backAngle": 2, "hipAngle": 90},
+    "poseModel": "movenet",
+    "quality": 0.91,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_13}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.93},
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89}
+    ],
+    "angles": {"shoulderAngle": 180, "kneeAngle": 20},
+    "poseModel": "movenet",
+    "quality": 0.92,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_14}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.90},
+      {"name": "right_elbow", "x": 0.65, "y": 0.5, "confidence": 0.91},
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92}
+    ],
+    "angles": {"elbowAngle": 45, "shoulderAngle": 5},
+    "poseModel": "movenet",
+    "quality": 0.89,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_15}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.91},
+      {"name": "right_elbow", "x": 0.65, "y": 0.5, "confidence": 0.92},
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93}
+    ],
+    "angles": {"elbowAngle": 90, "shoulderAngle": 180},
+    "poseModel": "movenet",
+    "quality": 0.88,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_16}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89},
+      {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.90},
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.91}
+    ],
+    "angles": {"kneeAngle": 90, "hipAngle": 90},
+    "poseModel": "movenet",
+    "quality": 0.90,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_17}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "nose", "x": 0.5, "y": 0.35, "confidence": 0.94},
+      {"name": "left_shoulder", "x": 0.4, "y": 0.45, "confidence": 0.92},
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90}
+    ],
+    "angles": {"backAngle": -30, "shoulderAngle": 45},
+    "poseModel": "movenet",
+    "quality": 0.87,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_18}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.91},
+      {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.92},
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89}
+    ],
+    "angles": {"hipAngle": 180, "kneeAngle": 80},
+    "poseModel": "movenet",
+    "quality": 0.93,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_19}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93},
+      {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.94},
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.91}
+    ],
+    "angles": {"backAngle": 2, "shoulderAngle": 90},
+    "poseModel": "movenet",
+    "quality": 0.91,
+    "isKeyFrame": true
+  },
+  {
+    "sessionId": "{{SESSION_ID_20}}",
+    "frameNumber": 0,
+    "timestamp": 0,
+    "keypoints": [
+      {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.90},
+      {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.91},
+      {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.92}
+    ],
+    "angles": {"kneeAngle": 90, "hipAngle": 90},
+    "poseModel": "movenet",
+    "quality": 0.92,
+    "isKeyFrame": true
+  }
+]

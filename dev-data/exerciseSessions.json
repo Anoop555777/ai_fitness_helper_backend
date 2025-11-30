@@ -1,0 +1,508 @@
+[
+  {
+    "userId": "{{USER_ID_1}}",
+    "exerciseId": "{{EXERCISE_ID_1}}",
+    "duration": 300,
+    "recordedAt": "2024-01-15T10:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.95},
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.93},
+            {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.88},
+            {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.89}
+          ],
+          "angles": {"kneeAngle": 45, "hipAngle": 60, "backAngle": 5}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 85,
+    "notes": "Good form overall, slight forward lean on some reps",
+    "isPublic": false,
+    "tags": ["morning", "strength"]
+  },
+  {
+    "userId": "{{USER_ID_2}}",
+    "exerciseId": "{{EXERCISE_ID_2}}",
+    "duration": 180,
+    "recordedAt": "2024-01-16T08:30:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "nose", "x": 0.5, "y": 0.25, "confidence": 0.94},
+            {"name": "left_shoulder", "x": 0.4, "y": 0.35, "confidence": 0.91},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.35, "confidence": 0.92}
+          ],
+          "angles": {"shoulderAngle": 170, "backAngle": 2}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 78,
+    "notes": "First time trying push-ups, need to work on form",
+    "isPublic": false,
+    "tags": ["beginner"]
+  },
+  {
+    "userId": "{{USER_ID_3}}",
+    "exerciseId": "{{EXERCISE_ID_3}}",
+    "duration": 420,
+    "recordedAt": "2024-01-17T18:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90},
+            {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.91},
+            {"name": "left_knee", "x": 0.45, "y": 0.75, "confidence": 0.88}
+          ],
+          "angles": {"backAngle": 15, "hipAngle": 75, "kneeAngle": 25}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 92,
+    "notes": "Excellent form, perfect technique",
+    "isPublic": true,
+    "tags": ["evening", "advanced"]
+  },
+  {
+    "userId": "{{USER_ID_4}}",
+    "exerciseId": "{{EXERCISE_ID_4}}",
+    "duration": 240,
+    "recordedAt": "2024-01-18T07:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.95},
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93}
+          ],
+          "angles": {"backAngle": 3, "shoulderAngle": 175}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 88,
+    "notes": "Strong core engagement, maintained good form",
+    "isPublic": false,
+    "tags": ["morning", "core"]
+  },
+  {
+    "userId": "{{USER_ID_5}}",
+    "exerciseId": "{{EXERCISE_ID_5}}",
+    "duration": 360,
+    "recordedAt": "2024-01-19T12:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89},
+            {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.90}
+          ],
+          "angles": {"kneeAngle": 88, "backAngle": 4}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 80,
+    "notes": "Good depth, need to work on balance",
+    "isPublic": false,
+    "tags": ["lunch", "legs"]
+  },
+  {
+    "userId": "{{USER_ID_6}}",
+    "exerciseId": "{{EXERCISE_ID_6}}",
+    "duration": 480,
+    "recordedAt": "2024-01-20T16:30:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.93}
+          ],
+          "angles": {"shoulderAngle": 175, "elbowAngle": 45}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 75,
+    "notes": "First bench press session, learning proper form",
+    "isPublic": false,
+    "tags": ["afternoon", "chest"]
+  },
+  {
+    "userId": "{{USER_ID_7}}",
+    "exerciseId": "{{EXERCISE_ID_7}}",
+    "duration": 300,
+    "recordedAt": "2024-01-21T09:15:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.91},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.92}
+          ],
+          "angles": {"shoulderAngle": 0, "elbowAngle": 180}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 82,
+    "notes": "Good pull-ups, need more reps",
+    "isPublic": false,
+    "tags": ["morning", "back"]
+  },
+  {
+    "userId": "{{USER_ID_8}}",
+    "exerciseId": "{{EXERCISE_ID_8}}",
+    "duration": 270,
+    "recordedAt": "2024-01-22T17:45:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.94}
+          ],
+          "angles": {"shoulderAngle": 180, "backAngle": 2}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 90,
+    "notes": "Perfect overhead press form",
+    "isPublic": true,
+    "tags": ["evening", "shoulders"]
+  },
+  {
+    "userId": "{{USER_ID_9}}",
+    "exerciseId": "{{EXERCISE_ID_9}}",
+    "duration": 330,
+    "recordedAt": "2024-01-23T11:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90},
+            {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.91}
+          ],
+          "angles": {"backAngle": -25, "hipAngle": 80, "kneeAngle": 15}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 85,
+    "notes": "Good hamstring stretch, maintaining form",
+    "isPublic": false,
+    "tags": ["midday", "hamstrings"]
+  },
+  {
+    "userId": "{{USER_ID_10}}",
+    "exerciseId": "{{EXERCISE_ID_10}}",
+    "duration": 210,
+    "recordedAt": "2024-01-24T13:30:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_shoulder", "x": 0.4, "y": 0.45, "confidence": 0.92},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.45, "confidence": 0.93}
+          ],
+          "angles": {"backAngle": -30, "shoulderAngle": 90}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 79,
+    "notes": "Learning proper rowing form",
+    "isPublic": false,
+    "tags": ["afternoon", "back"]
+  },
+  {
+    "userId": "{{USER_ID_11}}",
+    "exerciseId": "{{EXERCISE_ID_11}}",
+    "duration": 180,
+    "recordedAt": "2024-01-25T06:45:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.94},
+            {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.88}
+          ],
+          "angles": {"kneeAngle": 90, "hipAngle": 90, "backAngle": 5}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 72,
+    "notes": "Burpees are challenging, working on endurance",
+    "isPublic": false,
+    "tags": ["morning", "cardio"]
+  },
+  {
+    "userId": "{{USER_ID_12}}",
+    "exerciseId": "{{EXERCISE_ID_12}}",
+    "duration": 240,
+    "recordedAt": "2024-01-26T19:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "nose", "x": 0.5, "y": 0.3, "confidence": 0.95},
+            {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.90}
+          ],
+          "angles": {"backAngle": 2, "hipAngle": 90}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 86,
+    "notes": "Great core workout, maintained form",
+    "isPublic": false,
+    "tags": ["evening", "core"]
+  },
+  {
+    "userId": "{{USER_ID_13}}",
+    "exerciseId": "{{EXERCISE_ID_13}}",
+    "duration": 120,
+    "recordedAt": "2024-01-27T10:20:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.92},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.93},
+            {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89}
+          ],
+          "angles": {"shoulderAngle": 180, "kneeAngle": 20}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 91,
+    "notes": "Perfect jumping jacks, great warm-up",
+    "isPublic": true,
+    "tags": ["morning", "warmup"]
+  },
+  {
+    "userId": "{{USER_ID_14}}",
+    "exerciseId": "{{EXERCISE_ID_14}}",
+    "duration": 150,
+    "recordedAt": "2024-01-28T15:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.90},
+            {"name": "right_elbow", "x": 0.65, "y": 0.5, "confidence": 0.91}
+          ],
+          "angles": {"elbowAngle": 45, "shoulderAngle": 5}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 84,
+    "notes": "Good bicep pump, controlled movement",
+    "isPublic": false,
+    "tags": ["afternoon", "arms"]
+  },
+  {
+    "userId": "{{USER_ID_15}}",
+    "exerciseId": "{{EXERCISE_ID_15}}",
+    "duration": 200,
+    "recordedAt": "2024-01-29T08:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_elbow", "x": 0.35, "y": 0.5, "confidence": 0.91},
+            {"name": "right_elbow", "x": 0.65, "y": 0.5, "confidence": 0.92}
+          ],
+          "angles": {"elbowAngle": 90, "shoulderAngle": 180}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 77,
+    "notes": "Tricep dips getting easier",
+    "isPublic": false,
+    "tags": ["morning", "triceps"]
+  },
+  {
+    "userId": "{{USER_ID_16}}",
+    "exerciseId": "{{EXERCISE_ID_16}}",
+    "duration": 360,
+    "recordedAt": "2024-01-30T14:30:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.89},
+            {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.90}
+          ],
+          "angles": {"kneeAngle": 90, "hipAngle": 90}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 88,
+    "notes": "Leg press feels strong today",
+    "isPublic": false,
+    "tags": ["afternoon", "legs"]
+  },
+  {
+    "userId": "{{USER_ID_17}}",
+    "exerciseId": "{{EXERCISE_ID_17}}",
+    "duration": 180,
+    "recordedAt": "2024-01-31T16:00:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "nose", "x": 0.5, "y": 0.35, "confidence": 0.94},
+            {"name": "left_shoulder", "x": 0.4, "y": 0.45, "confidence": 0.92}
+          ],
+          "angles": {"backAngle": -30, "shoulderAngle": 45}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 81,
+    "notes": "Good rotational movement, core engaged",
+    "isPublic": false,
+    "tags": ["afternoon", "core"]
+  },
+  {
+    "userId": "{{USER_ID_18}}",
+    "exerciseId": "{{EXERCISE_ID_18}}",
+    "duration": 300,
+    "recordedAt": "2024-02-01T18:30:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_hip", "x": 0.45, "y": 0.6, "confidence": 0.91},
+            {"name": "right_hip", "x": 0.55, "y": 0.6, "confidence": 0.92}
+          ],
+          "angles": {"hipAngle": 180, "kneeAngle": 80}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 93,
+    "notes": "Perfect hip thrust form, great glute activation",
+    "isPublic": true,
+    "tags": ["evening", "glutes"]
+  },
+  {
+    "userId": "{{USER_ID_19}}",
+    "exerciseId": "{{EXERCISE_ID_19}}",
+    "duration": 270,
+    "recordedAt": "2024-02-02T07:30:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_shoulder", "x": 0.4, "y": 0.4, "confidence": 0.93},
+            {"name": "right_shoulder", "x": 0.6, "y": 0.4, "confidence": 0.94}
+          ],
+          "angles": {"backAngle": 2, "shoulderAngle": 90}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 87,
+    "notes": "Side plank held well, good stability",
+    "isPublic": false,
+    "tags": ["morning", "core"]
+  },
+  {
+    "userId": "{{USER_ID_20}}",
+    "exerciseId": "{{EXERCISE_ID_20}}",
+    "duration": 150,
+    "recordedAt": "2024-02-03T11:45:00.000Z",
+    "poseData": {
+      "keypoints": [
+        {
+          "frame": 0,
+          "timestamp": 0,
+          "keypoints": [
+            {"name": "left_knee", "x": 0.45, "y": 0.7, "confidence": 0.90},
+            {"name": "right_knee", "x": 0.55, "y": 0.7, "confidence": 0.91}
+          ],
+          "angles": {"kneeAngle": 90, "hipAngle": 90}
+        }
+      ],
+      "totalFrames": 1,
+      "fps": 30
+    },
+    "overallScore": 89,
+    "notes": "Explosive box jumps, great power",
+    "isPublic": true,
+    "tags": ["midday", "plyometric"]
+  }
+]
