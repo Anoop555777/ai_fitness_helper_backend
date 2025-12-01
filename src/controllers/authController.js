@@ -150,13 +150,17 @@ const createSendToken = (
   
   res.cookie("token", token, cookieOptions);
   
-  // Log cookie settings in development for debugging
-  if (process.env.NODE_ENV !== "production") {
-    console.log("Setting cookie with options:", {
-      ...cookieOptions,
-      tokenLength: token.length,
-    });
-  }
+  // Log cookie settings for debugging (both dev and prod to help troubleshoot)
+  console.log("Setting authentication cookie:", {
+    httpOnly: cookieOptions.httpOnly,
+    secure: cookieOptions.secure,
+    sameSite: cookieOptions.sameSite,
+    path: cookieOptions.path,
+    maxAge: cookieOptions.maxAge,
+    isProduction: process.env.NODE_ENV === "production",
+    frontendUrl: process.env.FRONTEND_URL,
+    tokenLength: token.length,
+  });
 
   // Send response without token in body (cookie handles it)
   res.status(statusCode).json({
