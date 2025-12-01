@@ -44,7 +44,7 @@ const exerciseSessionSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
       required: [true, 'User ID is required'],
-      index: true, // Index for user queries
+      // Index removed - using compound indexes below instead
     },
     exerciseId: {
       type: mongoose.Schema.Types.ObjectId,

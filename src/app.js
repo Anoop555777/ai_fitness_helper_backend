@@ -145,6 +145,26 @@ app.get("/health", (req, res) => {
   });
 });
 
+// Root endpoint
+app.get("/", (req, res) => {
+  res.status(HTTP_STATUS.OK).json({
+    status: API_STATUS.SUCCESS,
+    message: "Fitness Form Helper API",
+    version: "1.0.0",
+    endpoints: {
+      health: "/health",
+      api: "/api/v1",
+      auth: "/api/v1/auth",
+      exercises: "/api/v1/exercises",
+      sessions: "/api/v1/sessions",
+      feedback: "/api/v1/feedback",
+      videos: "/api/v1/videos",
+      goals: "/api/v1/goals",
+    },
+    timestamp: new Date().toISOString(),
+  });
+});
+
 // Mount all API routes
 mountRoutes(app);
 

@@ -10,8 +10,8 @@ const goalsSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
       required: [true, 'User ID is required'],
-      unique: true, // One set of goals per user
-      index: true,
+      unique: true, // One set of goals per user (unique automatically creates an index)
+      // index: true removed - unique already creates an index, and we have explicit index below
     },
     weeklySessions: {
       type: Number,
@@ -43,8 +43,8 @@ const goalsSchema = new mongoose.Schema(
   }
 );
 
-// Compound index for efficient queries
-goalsSchema.index({ userId: 1 });
+// Note: userId already has an index from unique: true constraint
+// No need for explicit index here
 
 /**
  * Static method to find goals by user ID
