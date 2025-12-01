@@ -14,6 +14,9 @@ import mountRoutes from "./routes/index.js";
 // Import middleware
 import globalErrorHandler from "./middleware/errorHandler.js";
 import { rateLimiter } from "./middleware/rateLimiter.js";
+
+// Import AI service for diagnostics
+import { isConfigured as isAIConfigured } from "./services/aiService.js";
 import { sanitizeRequest } from "./middleware/sanitization.js";
 import {
   requestId,
