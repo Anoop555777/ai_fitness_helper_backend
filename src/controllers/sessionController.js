@@ -249,6 +249,8 @@ export const createSession = catchAsync(async (req, res, next) => {
       feedbackData.length > 0
         ? JSON.stringify(feedbackData[0]).substring(0, 200)
         : "none",
+    aiConfigured: isAIConfigured(),
+    groqApiKeySet: !!process.env.GROQ_API_KEY,
   });
 
   // Create feedback entries if provided
@@ -288,6 +290,7 @@ export const createSession = catchAsync(async (req, res, next) => {
       logInfo("Feedback created for session", {
         sessionId: session._id.toString(),
         feedbackCount: createdFeedback.length,
+        feedbackIds: createdFeedback.map((fb) => fb._id.toString()),
       });
 
       // Convert Mongoose documents to plain objects for AI processing
@@ -571,12 +574,23 @@ export const createSession = catchAsync(async (req, res, next) => {
         );
         logInfo("Groq AI not configured, skipping feedback enhancement", {
           sessionId: session._id.toString(),
+          feedbackCount: createdFeedback.length,
+          groqApiKeySet: !!process.env.GROQ_API_KEY,
+          warning: "GROQ_API_KEY environment variable not set in production",
         });
       }
     } catch (feedbackError) {
-      logError("Failed to create feedback for session", feedbackError);
+      logError("Failed to create feedback for session", {
+        error: feedbackError.message,
+        stack: feedbackError.stack,
+        sessionId: session._id.toString(),
+        feedbackDataLength: feedbackData.length,
+      });
       // Don't fail the whole request if feedback creation fails
-      // Continue with session creation response
+      // Continue with session creation response, but log the error
+      // Set empty arrays to ensure response structure is correct
+      createdFeedback = [];
+      enhancedFeedback = [];
     }
   }
 
@@ -584,14 +598,41 @@ export const createSession = catchAsync(async (req, res, next) => {
   const sessionObj = session.toObject ? session.toObject() : session;
 
   // Prepare final feedback array - ensure it's always properly serialized
+  // CRITICAL: Always return feedback even if AI enhancement failed
   let finalFeedback = [];
   if (enhancedFeedback.length > 0) {
     finalFeedback = enhancedFeedback;
   } else if (createdFeedback.length > 0) {
-    finalFeedback = createdFeedback.map((fb) =>
-      fb.toObject ? fb.toObject() : fb
-    );
+    // Convert Mongoose documents to plain objects
+    finalFeedback = createdFeedback.map((fb) => {
+      if (fb.toObject) {
+        return fb.toObject();
+      }
+      // If already plain object, return as is
+      return {
+        _id: fb._id,
+        sessionId: fb.sessionId,
+        type: fb.type,
+        severity: fb.severity,
+        message: fb.message,
+        suggestion: fb.suggestion || null,
+        timestamp: fb.timestamp,
+        keypoints: fb.keypoints || [],
+        aiGenerated: fb.aiGenerated || false,
+        confidence: fb.confidence,
+        metadata: fb.metadata || {},
+      };
+    });
   }
+
+  // Log final feedback state for debugging
+  logInfo("Final feedback array prepared", {
+    sessionId: session._id.toString(),
+    finalFeedbackCount: finalFeedback.length,
+    createdFeedbackCount: createdFeedback.length,
+    enhancedFeedbackCount: enhancedFeedback.length,
+    hasFeedback: finalFeedback.length > 0,
+  });
 
   // Calculate AI enhancement statistics for response
   const aiEnhancedCount = finalFeedback.filter(
@@ -635,13 +676,24 @@ export const createSession = catchAsync(async (req, res, next) => {
     }
   }
 
+  // CRITICAL: Ensure feedback is always an array, never null or undefined
+  const safeFeedback = Array.isArray(finalFeedback) ? finalFeedback : [];
+
+  // Final validation log before response
+  logInfo("Sending session creation response", {
+    sessionId: session._id.toString(),
+    feedbackInResponse: safeFeedback.length,
+    aiEnhanced: aiEnhancementSucceeded,
+    aiConfigured: isAIConfigured(),
+  });
+
   // Return session with enhanced feedback
   res.status(HTTP_STATUS.CREATED).json({
     status: API_STATUS.SUCCESS,
     message: responseMessage,
     data: {
       session: sessionObj,
-      feedback: finalFeedback,
+      feedback: safeFeedback, // Always return array, even if empty
       aiEnhanced: aiEnhancementSucceeded,
       aiStats:
         isAIConfigured() && createdFeedback.length > 0
