@@ -59,6 +59,7 @@ if (process.env.NODE_ENV === "production") {
         },
       },
       crossOriginEmbedderPolicy: false, // Disable for better compatibility
+      crossOriginResourcePolicy: { policy: "cross-origin" }, // Allow cross-origin requests for cookies
       hsts: {
         maxAge: 31536000, // 1 year
         includeSubDomains: true,
@@ -84,12 +85,58 @@ app.use(validateIp);
 
 // 6. CORS configuration
 // In development, allow all origins for mobile testing
-// In production, use specific frontend URL
+// In production, use specific frontend URL(s)
+const getAllowedOrigins = () => {
+  if (process.env.NODE_ENV !== "production") {
+    return process.env.FRONTEND_URL || "http://localhost:3000";
+  }
+
+  // Production: Support multiple frontend URLs
+  const origins = [];
+
+  // Add configured FRONTEND_URL if provided
+  if (process.env.FRONTEND_URL) {
+    origins.push(process.env.FRONTEND_URL);
+  }
+
+  // Add known production frontend URLs
+  const knownFrontendUrls = [
+    "https://ai-fitness-helper-frontend.vercel.app",
+    "https://asb-ai-fitness-helper.vercel.app",
+  ];
+
+  origins.push(...knownFrontendUrls);
+
+  // Remove duplicates and return
+  return [...new Set(origins)];
+};
+
 const corsOptions = {
-  origin:
-    process.env.NODE_ENV === "production"
-      ? process.env.FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"
-      : process.env.FRONTEND_URL || "http://localhost:3000", // Use localhost:3000 in development
+  origin: (origin, callback) => {
+    const allowedOrigins = getAllowedOrigins();
+
+    // Allow requests with no origin (like mobile apps, curl, or same-origin)
+    if (!origin) {
+      return callback(null, true);
+    }
+
+    // In development, allow all origins
+    if (process.env.NODE_ENV !== "production") {
+      return callback(null, true);
+    }
+
+    // Check if origin is allowed
+    if (Array.isArray(allowedOrigins)) {
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+    } else if (origin === allowedOrigins) {
+      return callback(null, true);
+    }
+
+    // Origin not allowed
+    callback(new Error("Not allowed by CORS"));
+  },
   credentials: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Request-ID"],

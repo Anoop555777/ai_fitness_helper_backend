@@ -88,30 +88,33 @@ const parseExpirationToMs = (expiresIn) => {
 const getCookieOptions = () => {
   const isProduction = process.env.NODE_ENV === "production";
   // Check if frontend and backend are on different domains (cross-origin)
-  // If FRONTEND_URL contains a different domain than the backend, it's cross-origin
+  // In production, assume cross-origin since frontend (Vercel) and backend (Render) are different domains
   const frontendUrl = process.env.FRONTEND_URL || "";
-  const isLocalhost = frontendUrl.includes("localhost") || frontendUrl.includes("127.0.0.1");
-  const isCrossOrigin = isProduction && !isLocalhost && frontendUrl.length > 0;
+  const isLocalhost =
+    frontendUrl.includes("localhost") || frontendUrl.includes("127.0.0.1");
+
+  // In production, use SameSite: "none" for cross-origin cookies (frontend on Vercel, backend on Render)
+  // In development with localhost, use "lax" for same-origin
+  // Only use "strict" if explicitly same-origin in production (rare)
+  const isCrossOrigin = isProduction && !isLocalhost;
   const useSameSiteNone = isCrossOrigin;
-  
+
   // When sameSite is "none", secure MUST be true (browser requirement)
   const cookieOptions = {
     httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
     secure: useSameSiteNone || isProduction, // HTTPS only when sameSite is "none" or in production
-    sameSite: useSameSiteNone ? "none" : (isProduction ? "strict" : "lax"), // "none" for cross-origin, "strict" for same-origin
+    sameSite: useSameSiteNone ? "none" : isProduction ? "strict" : "lax", // "none" for cross-origin, "lax" for same-origin
     path: "/", // Available for all routes
   };
-  
-  // Log cookie options in development for debugging
-  if (!isProduction) {
-    console.log("Cookie options:", {
-      ...cookieOptions,
-      isProduction,
-      isCrossOrigin,
-      frontendUrl,
-    });
-  }
-  
+
+  // Log cookie options for debugging (both dev and prod to help troubleshoot)
+  console.log("Cookie options:", {
+    ...cookieOptions,
+    isProduction,
+    isCrossOrigin,
+    frontendUrl: frontendUrl || "not set",
+  });
+
   return cookieOptions;
 };
 
@@ -147,9 +150,10 @@ const createSendToken = (
     // Additional security: domain should be set if using subdomains
     // domain: process.env.COOKIE_DOMAIN, // Optional: restrict to specific domain
   };
-  
+
+  // Set cookie
   res.cookie("token", token, cookieOptions);
-  
+
   // Log cookie settings for debugging (both dev and prod to help troubleshoot)
   console.log("Setting authentication cookie:", {
     httpOnly: cookieOptions.httpOnly,
@@ -162,13 +166,29 @@ const createSendToken = (
     tokenLength: token.length,
   });
 
+  // Verify cookie header was set
+  const setCookieHeader = res.getHeader("Set-Cookie");
+  if (!setCookieHeader) {
+    console.error("ERROR: Set-Cookie header was NOT set in response!");
+  } else {
+    console.log(
+      "Set-Cookie header confirmed:",
+      Array.isArray(setCookieHeader) ? setCookieHeader[0] : setCookieHeader
+    );
+  }
+
   // Send response without token in body (cookie handles it)
-  res.status(statusCode).json({
+  // Use res.json() instead of res.status().json() to ensure headers are sent
+  res.status(statusCode);
+  res.json({
     status: API_STATUS.SUCCESS,
     data: {
       user,
     },
   });
+
+  // Log after response is sent
+  console.log("Login response sent successfully");
 };
 
 /**
@@ -369,12 +389,16 @@ export const getMe = catchAsync(async (req, res, next) => {
 export const checkUsername = catchAsync(async (req, res, next) => {
   const { username } = req.params;
 
-  if (!username || typeof username !== 'string' || username.trim().length === 0) {
+  if (
+    !username ||
+    typeof username !== "string" ||
+    username.trim().length === 0
+  ) {
     return res.status(HTTP_STATUS.OK).json({
       status: API_STATUS.SUCCESS,
       data: {
         available: false,
-        message: 'Username is required',
+        message: "Username is required",
       },
     });
   }
@@ -404,7 +428,7 @@ export const checkUsername = catchAsync(async (req, res, next) => {
 
   // Check if username exists (case-insensitive), excluding current user
   const query = {
-    username: { $regex: new RegExp(`^${trimmedUsername}$`, 'i') },
+    username: { $regex: new RegExp(`^${trimmedUsername}$`, "i") },
   };
 
   if (currentUserId) {
@@ -417,7 +441,9 @@ export const checkUsername = catchAsync(async (req, res, next) => {
     status: API_STATUS.SUCCESS,
     data: {
       available: !existingUser,
-      message: existingUser ? 'Username already exists' : 'Username is available',
+      message: existingUser
+        ? "Username already exists"
+        : "Username is available",
     },
   });
 });
@@ -927,9 +953,10 @@ export const resetPassword = catchAsync(async (req, res, next) => {
  */
 export const verifyToken = catchAsync(async (req, res, next) => {
   const { token } = req.params;
-  const FRONTEND_URL = process.env.FRONTEND_URL || 
-    (process.env.NODE_ENV === "development" 
-      ? "http://localhost:3000" 
+  const FRONTEND_URL =
+    process.env.FRONTEND_URL ||
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
       : "https://asb-ai-fitness-helper.vercel.app");
   const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8000";
 
@@ -1230,7 +1257,9 @@ export const googleCallback = catchAsync(async (req, res, next) => {
   if (error) {
     logError("Google OAuth error", new Error(`OAuth error: ${error}`));
     return res.redirect(
-      `${FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"}/login?error=oauth_denied`
+      `${
+        FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"
+      }/login?error=oauth_denied`
     );
   }
 
@@ -1241,7 +1270,9 @@ export const googleCallback = catchAsync(async (req, res, next) => {
       new Error("No authorization code received")
     );
     return res.redirect(
-      `${FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"}/login?error=oauth_no_code`
+      `${
+        FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"
+      }/login?error=oauth_no_code`
     );
   }
 
@@ -1316,7 +1347,9 @@ export const googleCallback = catchAsync(async (req, res, next) => {
     });
 
     // Redirect to frontend (token is in cookie)
-    res.redirect(`${FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"}/dashboard`);
+    res.redirect(
+      `${FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"}/dashboard`
+    );
   } catch (error) {
     logError("Google OAuth callback error", error);
 
@@ -1330,7 +1363,9 @@ export const googleCallback = catchAsync(async (req, res, next) => {
     }
 
     return res.redirect(
-      `${FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"}/login?error=oauth_failed`
+      `${
+        FRONTEND_URL || "https://asb-ai-fitness-helper.vercel.app"
+      }/login?error=oauth_failed`
     );
   }
 });
