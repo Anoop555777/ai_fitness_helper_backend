@@ -87,16 +87,32 @@ const parseExpirationToMs = (expiresIn) => {
  */
 const getCookieOptions = () => {
   const isProduction = process.env.NODE_ENV === "production";
-  const isCrossOrigin = !!process.env.FRONTEND_URL && 
-    process.env.FRONTEND_URL !== "http://localhost:3000";
-  const useSameSiteNone = isCrossOrigin && isProduction;
+  // Check if frontend and backend are on different domains (cross-origin)
+  // If FRONTEND_URL contains a different domain than the backend, it's cross-origin
+  const frontendUrl = process.env.FRONTEND_URL || "";
+  const isLocalhost = frontendUrl.includes("localhost") || frontendUrl.includes("127.0.0.1");
+  const isCrossOrigin = isProduction && !isLocalhost && frontendUrl.length > 0;
+  const useSameSiteNone = isCrossOrigin;
   
-  return {
+  // When sameSite is "none", secure MUST be true (browser requirement)
+  const cookieOptions = {
     httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
     secure: useSameSiteNone || isProduction, // HTTPS only when sameSite is "none" or in production
     sameSite: useSameSiteNone ? "none" : (isProduction ? "strict" : "lax"), // "none" for cross-origin, "strict" for same-origin
     path: "/", // Available for all routes
   };
+  
+  // Log cookie options in development for debugging
+  if (!isProduction) {
+    console.log("Cookie options:", {
+      ...cookieOptions,
+      isProduction,
+      isCrossOrigin,
+      frontendUrl,
+    });
+  }
+  
+  return cookieOptions;
 };
 
 /**
@@ -125,12 +141,22 @@ const createSendToken = (
   // For cross-origin requests (frontend on Vercel, backend on Render):
   // - sameSite: "none" allows cross-origin cookies
   // - secure: true is REQUIRED when sameSite is "none" (HTTPS only)
-  res.cookie("token", token, {
+  const cookieOptions = {
     ...getCookieOptions(),
     maxAge: cookieMaxAge, // Cookie expiration matches token expiration
     // Additional security: domain should be set if using subdomains
     // domain: process.env.COOKIE_DOMAIN, // Optional: restrict to specific domain
-  });
+  };
+  
+  res.cookie("token", token, cookieOptions);
+  
+  // Log cookie settings in development for debugging
+  if (process.env.NODE_ENV !== "production") {
+    console.log("Setting cookie with options:", {
+      ...cookieOptions,
+      tokenLength: token.length,
+    });
+  }
 
   // Send response without token in body (cookie handles it)
   res.status(statusCode).json({
