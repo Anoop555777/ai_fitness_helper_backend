@@ -192,6 +192,60 @@ app.get("/health", (req, res) => {
   });
 });
 
+// Diagnostic endpoint for AI service configuration
+app.get("/api/v1/diagnostics/ai", (req, res) => {
+  const groqApiKeySet = !!process.env.GROQ_API_KEY;
+  const groqApiKeyLength = process.env.GROQ_API_KEY
+    ? process.env.GROQ_API_KEY.length
+    : 0;
+  const groqModel = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+  const nodeEnv = process.env.NODE_ENV || "development";
+
+  const diagnostics = {
+    status: API_STATUS.SUCCESS,
+    timestamp: new Date().toISOString(),
+    aiService: {
+      configured: isAIConfigured(),
+      groqApiKey: {
+        set: groqApiKeySet,
+        length: groqApiKeyLength,
+        preview: groqApiKeySet
+          ? `${process.env.GROQ_API_KEY.substring(0, 10)}...`
+          : null,
+      },
+      model: groqModel,
+      environment: nodeEnv,
+    },
+    recommendations: [],
+  };
+
+  // Add recommendations
+  if (!groqApiKeySet) {
+    diagnostics.recommendations.push({
+      severity: "error",
+      message:
+        "GROQ_API_KEY is not set. AI feedback enhancement will be disabled.",
+      action:
+        "Add GROQ_API_KEY to your environment variables in Render dashboard.",
+    });
+  } else if (!isAIConfigured()) {
+    diagnostics.recommendations.push({
+      severity: "warning",
+      message:
+        "AI service reports as not configured despite API key being set.",
+      action:
+        "Check AI service initialization in backend/src/services/aiService.js",
+    });
+  } else {
+    diagnostics.recommendations.push({
+      severity: "success",
+      message: "AI service is properly configured and ready to use.",
+    });
+  }
+
+  res.status(HTTP_STATUS.OK).json(diagnostics);
+});
+
 // Root endpoint
 app.get("/", (req, res) => {
   res.status(HTTP_STATUS.OK).json({
