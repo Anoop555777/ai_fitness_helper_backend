@@ -123,10 +123,12 @@ process.on('SIGINT', () => gracefulShutdown('SIGINT'));
 
 // Server port
 const PORT = process.env.PORT || 8000;
-const HOST = process.env.HOST || 'localhost';
+// Bind to 0.0.0.0 in production/cloud environments to allow external connections
+// Use localhost only in local development
+const HOST = process.env.HOST || (process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost');
 
 server.listen(PORT, HOST, () => {
-  // Server started
+  console.log(`Server running on ${HOST}:${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
 });
 
 // Handle unhandled promise rejections (asynchronous errors)
