@@ -251,6 +251,10 @@ export const createSession = catchAsync(async (req, res, next) => {
         : "none",
     aiConfigured: isAIConfigured(),
     groqApiKeySet: !!process.env.GROQ_API_KEY,
+    groqApiKeyLength: process.env.GROQ_API_KEY
+      ? process.env.GROQ_API_KEY.length
+      : 0,
+    nodeEnv: process.env.NODE_ENV,
   });
 
   // Create feedback entries if provided
@@ -276,7 +280,7 @@ export const createSession = catchAsync(async (req, res, next) => {
         sessionId: session._id,
         type: mapFeedbackType(fb.type),
         severity: fb.severity || "error",
-        message: fb.message,
+        message: fb.message || "No message provided",
         suggestion: fb.suggestion || null,
         timestamp: fb.timestamp || 0,
         keypoints: fb.keypoints || [],
@@ -285,13 +289,74 @@ export const createSession = catchAsync(async (req, res, next) => {
         metadata: fb.metadata || {},
       }));
 
-      createdFeedback = await Feedback.insertMany(feedbackToCreate);
-
-      logInfo("Feedback created for session", {
+      logInfo("Feedback data prepared for insertion", {
         sessionId: session._id.toString(),
-        feedbackCount: createdFeedback.length,
-        feedbackIds: createdFeedback.map((fb) => fb._id.toString()),
+        feedbackToCreateCount: feedbackToCreate.length,
+        sampleFeedback: feedbackToCreate[0]
+          ? {
+              type: feedbackToCreate[0].type,
+              severity: feedbackToCreate[0].severity,
+              hasMessage: !!feedbackToCreate[0].message,
+              messageLength: feedbackToCreate[0].message?.length || 0,
+            }
+          : null,
       });
+
+      try {
+        createdFeedback = await Feedback.insertMany(feedbackToCreate, {
+          ordered: false, // Continue inserting even if some fail
+        });
+
+        logInfo("Feedback created for session", {
+          sessionId: session._id.toString(),
+          feedbackCount: createdFeedback.length,
+          feedbackIds: createdFeedback.map((fb) => fb._id.toString()),
+        });
+      } catch (insertError) {
+        // Handle partial failures in insertMany
+        if (insertError.writeErrors && insertError.writeErrors.length > 0) {
+          logError("Some feedback items failed to insert", {
+            sessionId: session._id.toString(),
+            totalAttempted: feedbackToCreate.length,
+            failedCount: insertError.writeErrors.length,
+            errors: insertError.writeErrors.map((err) => ({
+              index: err.index,
+              code: err.code,
+              message: err.errmsg || err.message,
+            })),
+          });
+
+          // Get successfully inserted items
+          const insertedCount = insertError.insertedIds
+            ? Object.keys(insertError.insertedIds).length
+            : 0;
+          if (insertedCount > 0) {
+            // Fetch the successfully inserted feedback
+            const insertedIds = Object.values(insertError.insertedIds);
+            createdFeedback = await Feedback.find({
+              _id: { $in: insertedIds },
+            });
+            logInfo("Retrieved successfully inserted feedback", {
+              sessionId: session._id.toString(),
+              count: createdFeedback.length,
+            });
+          } else {
+            createdFeedback = [];
+            logWarn("No feedback items were successfully inserted", {
+              sessionId: session._id.toString(),
+            });
+          }
+        } else {
+          // Complete failure - log and rethrow to be caught by outer catch
+          logError("Failed to insert feedback - complete failure", {
+            sessionId: session._id.toString(),
+            error: insertError.message,
+            stack: insertError.stack,
+            attemptedCount: feedbackToCreate.length,
+          });
+          throw insertError; // Re-throw to be caught by outer catch block
+        }
+      }
 
       // Convert Mongoose documents to plain objects for AI processing
       // This is critical because spread operator (...) doesn't work correctly on Mongoose documents
@@ -582,9 +647,24 @@ export const createSession = catchAsync(async (req, res, next) => {
     } catch (feedbackError) {
       logError("Failed to create feedback for session", {
         error: feedbackError.message,
+        errorName: feedbackError.name,
         stack: feedbackError.stack,
         sessionId: session._id.toString(),
         feedbackDataLength: feedbackData.length,
+        errorCode: feedbackError.code,
+        errorErrors: feedbackError.errors
+          ? Object.keys(feedbackError.errors)
+          : null,
+        // Log validation errors if they exist
+        validationErrors:
+          feedbackError.errors
+            ? Object.entries(feedbackError.errors).map(([key, err]) => ({
+                field: key,
+                message: err.message,
+                kind: err.kind,
+                value: err.value,
+              }))
+            : null,
       });
       // Don't fail the whole request if feedback creation fails
       // Continue with session creation response, but log the error
