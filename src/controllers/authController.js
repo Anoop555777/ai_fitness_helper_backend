@@ -81,6 +81,25 @@ const parseExpirationToMs = (expiresIn) => {
 };
 
 /**
+ * Get cookie options for authentication cookies
+ * Handles cross-origin cookie settings (frontend on Vercel, backend on Render)
+ * @returns {Object} Cookie options
+ */
+const getCookieOptions = () => {
+  const isProduction = process.env.NODE_ENV === "production";
+  const isCrossOrigin = !!process.env.FRONTEND_URL && 
+    process.env.FRONTEND_URL !== "http://localhost:3000";
+  const useSameSiteNone = isCrossOrigin && isProduction;
+  
+  return {
+    httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
+    secure: useSameSiteNone || isProduction, // HTTPS only when sameSite is "none" or in production
+    sameSite: useSameSiteNone ? "none" : (isProduction ? "strict" : "lax"), // "none" for cross-origin, "strict" for same-origin
+    path: "/", // Available for all routes
+  };
+};
+
+/**
  * Create and send token response with cookie
  * Sets JWT token as HttpOnly cookie for security
  * @param {Object} user - User object
@@ -103,12 +122,12 @@ const createSendToken = (
   const cookieMaxAge = parseExpirationToMs(expiresIn);
 
   // Set JWT token as HttpOnly cookie (best practice for security)
+  // For cross-origin requests (frontend on Vercel, backend on Render):
+  // - sameSite: "none" allows cross-origin cookies
+  // - secure: true is REQUIRED when sameSite is "none" (HTTPS only)
   res.cookie("token", token, {
-    httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
-    secure: process.env.NODE_ENV === "production", // HTTPS only in production
-    sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax", // Strict in production for better CSRF protection
+    ...getCookieOptions(),
     maxAge: cookieMaxAge, // Cookie expiration matches token expiration
-    path: "/", // Available for all routes
     // Additional security: domain should be set if using subdomains
     // domain: process.env.COOKIE_DOMAIN, // Optional: restrict to specific domain
   });
@@ -284,12 +303,7 @@ export const logout = catchAsync(async (req, res, next) => {
   logAuth("logout", req.user._id.toString(), { email: req.user.email });
 
   // Clear the authentication cookie (must match the same settings used when setting the cookie)
-  res.clearCookie("token", {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "lax",
-    path: "/",
-  });
+  res.clearCookie("token", getCookieOptions());
 
   res.status(HTTP_STATUS.NO_CONTENT).json({
     status: API_STATUS.SUCCESS,
@@ -1267,11 +1281,8 @@ export const googleCallback = catchAsync(async (req, res, next) => {
 
     // Set JWT token as HttpOnly cookie (best practice for security)
     res.cookie("token", token, {
-      httpOnly: true, // Prevents XSS attacks - JavaScript cannot access cookie
-      secure: process.env.NODE_ENV === "production", // HTTPS only in production
-      sameSite: process.env.NODE_ENV === "production" ? "strict" : "lax", // Strict in production for better CSRF protection
+      ...getCookieOptions(),
       maxAge: cookieMaxAge, // Cookie expiration matches token expiration
-      path: "/", // Available for all routes
     });
 
     // Redirect to frontend (token is in cookie)
