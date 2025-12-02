@@ -192,9 +192,24 @@ export const createSession = catchAsync(async (req, res, next) => {
     }
   }
 
-  // Create session
+  // Debug: Log raw req.body to see what we're receiving
+  console.log("🔍 DEBUG - Raw req.body.feedback:", {
+    exists: !!req.body.feedback,
+    type: typeof req.body.feedback,
+    isArray: Array.isArray(req.body.feedback),
+    constructor: req.body.feedback?.constructor?.name,
+    keys: req.body.feedback && typeof req.body.feedback === 'object' ? Object.keys(req.body.feedback) : null,
+    length: req.body.feedback?.length,
+    stringified: JSON.stringify(req.body.feedback).substring(0, 200),
+  });
+  
+  // Extract feedback from req.body BEFORE creating session
+  // This prevents it from being lost or modified during session creation
+  const { feedback: feedbackFromBody, ...sessionData } = req.body;
+  
+  // Create session (without feedback field, as it's not part of the schema)
   const session = await ExerciseSession.create({
-    ...req.body,
+    ...sessionData,
     userId,
     exerciseId,
   });
@@ -235,8 +250,69 @@ export const createSession = catchAsync(async (req, res, next) => {
     score: session.overallScore,
   });
 
-  // Extract feedback data from request body (if provided)
-  const feedbackData = req.body.feedback || [];
+  // Process feedback data (we already extracted it above as feedbackFromBody)
+  // Ensure feedback is always an array
+  // Sometimes arrays get converted to objects during JSON parsing or middleware processing
+  let feedbackData = [];
+  
+  // Debug: Log raw feedback from body
+  console.log("🔍 DEBUG - Raw feedbackFromBody:", {
+    type: typeof feedbackFromBody,
+    isArray: Array.isArray(feedbackFromBody),
+    value: feedbackFromBody,
+  });
+  
+  if (feedbackFromBody) {
+    if (Array.isArray(feedbackFromBody)) {
+      // Already an array - perfect!
+      feedbackData = feedbackFromBody;
+      console.log("🔍 DEBUG - Feedback is already an array, length:", feedbackData.length);
+    } else if (typeof feedbackFromBody === 'object' && feedbackFromBody !== null) {
+      // It's an object - could be:
+      // 1. A single feedback object: {type: 'error', ...}
+      // 2. An array converted to object with numeric keys: {0: {...}, 1: {...}, length: 2}
+      // 3. An array converted to object: {'0': {...}, '1': {...}}
+      
+      const keys = Object.keys(feedbackFromBody);
+      console.log("🔍 DEBUG - Feedback is object, keys:", keys);
+      
+      // Check if it looks like an array that was converted to an object
+      // Arrays converted to objects typically have numeric string keys
+      const numericKeys = keys.filter(key => {
+        const num = parseInt(key);
+        return !isNaN(num) && num.toString() === key && num >= 0;
+      });
+      
+      console.log("🔍 DEBUG - Numeric keys found:", numericKeys);
+      
+      if (numericKeys.length > 0 && numericKeys.length === keys.length) {
+        // It's an object with all numeric keys - convert back to array
+        // Sort keys numerically to maintain order
+        const sortedKeys = numericKeys.sort((a, b) => parseInt(a) - parseInt(b));
+        feedbackData = sortedKeys.map(key => feedbackFromBody[key]);
+        console.log("🔍 DEBUG - Converted object with numeric keys to array, length:", feedbackData.length);
+      } else if (numericKeys.length > 0) {
+        // Mixed keys - extract numeric ones and convert to array
+        const sortedKeys = numericKeys.sort((a, b) => parseInt(a) - parseInt(b));
+        feedbackData = sortedKeys.map(key => feedbackFromBody[key]);
+        console.log("🔍 DEBUG - Extracted numeric keys from mixed object, length:", feedbackData.length);
+      } else {
+        // It's a single feedback object - wrap it in an array
+        feedbackData = [feedbackFromBody];
+        console.log("🔍 DEBUG - Wrapped single object in array");
+      }
+    }
+  }
+  
+  // Debug: Log what we received and what we converted it to
+  console.log("🔍 DEBUG - Feedback conversion result:", {
+    originalType: typeof feedbackFromBody,
+    originalIsArray: Array.isArray(feedbackFromBody),
+    originalKeys: feedbackFromBody && typeof feedbackFromBody === 'object' ? Object.keys(feedbackFromBody) : null,
+    convertedType: Array.isArray(feedbackData) ? "array" : typeof feedbackData,
+    convertedLength: feedbackData.length,
+  });
+  
   let createdFeedback = [];
   let enhancedFeedback = [];
   let aiEnhancementSucceeded = false;
@@ -307,9 +383,9 @@ export const createSession = catchAsync(async (req, res, next) => {
           ordered: false, // Continue inserting even if some fail
         });
 
-        logInfo("Feedback created for session", {
-          sessionId: session._id.toString(),
-          feedbackCount: createdFeedback.length,
+      logInfo("Feedback created for session", {
+        sessionId: session._id.toString(),
+        feedbackCount: createdFeedback.length,
           feedbackIds: createdFeedback.map((fb) => fb._id.toString()),
         });
       } catch (insertError) {

@@ -16,7 +16,10 @@ import globalErrorHandler from "./middleware/errorHandler.js";
 import { rateLimiter } from "./middleware/rateLimiter.js";
 
 // Import AI service for diagnostics
-import { isConfigured as isAIConfigured } from "./services/aiService.js";
+import {
+  isConfigured as isAIConfigured,
+  enhanceFeedback,
+} from "./services/aiService.js";
 import { sanitizeRequest } from "./middleware/sanitization.js";
 import {
   requestId,
@@ -196,57 +199,103 @@ app.get("/health", (req, res) => {
 });
 
 // Diagnostic endpoint for AI service configuration
-app.get("/api/v1/diagnostics/ai", (req, res) => {
-  const groqApiKeySet = !!process.env.GROQ_API_KEY;
-  const groqApiKeyLength = process.env.GROQ_API_KEY
-    ? process.env.GROQ_API_KEY.length
-    : 0;
-  const groqModel = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
-  const nodeEnv = process.env.NODE_ENV || "development";
+app.get("/api/v1/diagnostics/ai", async (req, res) => {
+  try {
+    const groqApiKeySet = !!process.env.GROQ_API_KEY;
+    const groqApiKeyLength = process.env.GROQ_API_KEY
+      ? process.env.GROQ_API_KEY.length
+      : 0;
+    const groqModel = process.env.GROQ_MODEL || "llama-3.1-8b-instant";
+    const nodeEnv = process.env.NODE_ENV || "development";
 
-  const diagnostics = {
-    status: API_STATUS.SUCCESS,
-    timestamp: new Date().toISOString(),
-    aiService: {
-      configured: isAIConfigured(),
-      groqApiKey: {
-        set: groqApiKeySet,
-        length: groqApiKeyLength,
-        preview: groqApiKeySet
-          ? `${process.env.GROQ_API_KEY.substring(0, 10)}...`
-          : null,
+    const diagnostics = {
+      status: API_STATUS.SUCCESS,
+      timestamp: new Date().toISOString(),
+      aiService: {
+        configured: isAIConfigured(),
+        groqApiKey: {
+          set: groqApiKeySet,
+          length: groqApiKeyLength,
+          preview: groqApiKeySet
+            ? `${process.env.GROQ_API_KEY.substring(0, 10)}...`
+            : null,
+        },
+        model: groqModel,
+        environment: nodeEnv,
       },
-      model: groqModel,
-      environment: nodeEnv,
-    },
-    recommendations: [],
-  };
+      recommendations: [],
+      testConnection: null,
+    };
 
-  // Add recommendations
-  if (!groqApiKeySet) {
-    diagnostics.recommendations.push({
-      severity: "error",
-      message:
-        "GROQ_API_KEY is not set. AI feedback enhancement will be disabled.",
-      action:
-        "Add GROQ_API_KEY to your environment variables in Render dashboard.",
-    });
-  } else if (!isAIConfigured()) {
-    diagnostics.recommendations.push({
-      severity: "warning",
-      message:
-        "AI service reports as not configured despite API key being set.",
-      action:
-        "Check AI service initialization in backend/src/services/aiService.js",
-    });
-  } else {
-    diagnostics.recommendations.push({
-      severity: "success",
-      message: "AI service is properly configured and ready to use.",
+    // Add recommendations
+    if (!groqApiKeySet) {
+      diagnostics.recommendations.push({
+        severity: "error",
+        message:
+          "GROQ_API_KEY is not set. AI feedback enhancement will be disabled.",
+        action:
+          "Add GROQ_API_KEY to your environment variables in Render dashboard.",
+      });
+    } else if (!isAIConfigured()) {
+      diagnostics.recommendations.push({
+        severity: "warning",
+        message:
+          "AI service reports as not configured despite API key being set.",
+        action:
+          "Check AI service initialization in backend/src/services/aiService.js",
+      });
+    } else {
+      diagnostics.recommendations.push({
+        severity: "success",
+        message: "AI service is properly configured and ready to use.",
+      });
+
+      // Test Groq connection if test=true query param
+      if (req.query.test === "true" && isAIConfigured()) {
+        try {
+          const testFeedback = {
+            _id: "test",
+            type: "form_error",
+            severity: "error",
+            message: "Test feedback for connection verification",
+            timestamp: 0,
+            keypoints: ["knee"],
+          };
+
+          const startTime = Date.now();
+          const enhanced = await enhanceFeedback(testFeedback, {
+            exercise: { name: "Test Exercise" },
+            session: { duration: 10, overallScore: 80 },
+          });
+          const duration = Date.now() - startTime;
+
+          diagnostics.testConnection = {
+            success: true,
+            duration: `${duration}ms`,
+            aiGenerated: enhanced.aiGenerated,
+            hasSuggestion: !!enhanced.suggestion,
+            suggestionPreview: enhanced.suggestion
+              ? enhanced.suggestion.substring(0, 50) + "..."
+              : null,
+          };
+        } catch (testError) {
+          diagnostics.testConnection = {
+            success: false,
+            error: testError.message,
+            errorType: testError.constructor.name,
+          };
+        }
+      }
+    }
+
+    res.status(HTTP_STATUS.OK).json(diagnostics);
+  } catch (error) {
+    res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
+      status: API_STATUS.FAIL,
+      message: "Failed to get diagnostics",
+      error: error.message,
     });
   }
-
-  res.status(HTTP_STATUS.OK).json(diagnostics);
 });
 
 // Root endpoint

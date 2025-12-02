@@ -53,8 +53,8 @@ export const preventParameterPollution = (req, res, next) => {
     Object.keys(req.body).forEach((key) => {
       if (Array.isArray(req.body[key]) && req.body[key].length > 0) {
         // For most fields, take the last value
-        // Exception: arrays that should remain arrays (like tags, items, etc.)
-        const arrayFields = ['tags', 'items', 'targetMuscles', 'equipment', 'keypoints'];
+        // Exception: arrays that should remain arrays (like tags, items, feedback, etc.)
+        const arrayFields = ['tags', 'items', 'targetMuscles', 'equipment', 'keypoints', 'feedback'];
         if (!arrayFields.includes(key)) {
           req.body[key] = req.body[key][req.body[key].length - 1];
         }
